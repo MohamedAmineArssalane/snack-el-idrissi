@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" class="lang-fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Snack El Idrissi – Restaurant Marocain à Casablanca | Menu & Commande</title>
+<meta name="description" content="Snack El Idrissi à Casablanca – Cuisine marocaine authentique : grillades, sandwichs, salades. Commandez sur WhatsApp. Ouvert jusqu'à 23h.">
+<meta name="keywords" content="snack casablanca, restaurant marocain, kefta, brochettes, commande whatsapp, livraison casa">
+<meta property="og:title" content="Snack El Idrissi – Saveurs Marocaines à Casablanca">
+<meta property="og:description" content="Grillades, sandwichs et plats marocains authentiques. 46 avis · 4.5 étoiles.">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="fr_MA">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+<meta name="theme-color" content="#08070A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,700&family=Tajawal:wght@400;700&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:        #08070A;
+  --ink-soft:   #121016;
+  --ink-card:   #1A1820;
+  --gold:       #C9A84C;
+  --gold-light: #E8C97A;
+  --gold-dim:   #7A6330;
+  --cream:      #F2E8D0;
+  --cream-soft: #C9BBA0;
+  --bronze:     #9A8A6A;
+  --bronze-dim: #3D3528;
+  --success:    #2ECC71;
+  --danger:     #E74C3C;
+  --spice-1:    #E67E22;
+  --spice-2:    #E74C3C;
+  --spice-3:    #C0392B;
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+  --radius-xl:  32px;
+  --shadow-gold: 0 0 40px rgba(201,168,76,0.15);
+  --shadow-card: 0 8px 32px rgba(0,0,0,0.4);
+  --transition:  all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: clamp(14px, 1.5vw + 10px, 18px); }
+
+body {
+  background: var(--ink);
+  color: var(--cream);
+  font-family: 'Libre Baskerville', Georgia, serif;
+  line-height: 1.75;
+  overflow-x: hidden;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cg fill='none' stroke='rgba(201,168,76,0.04)' stroke-width='0.8'%3E%3Cpolygon points='30,2 35,12 46,12 37,19 41,30 30,23 19,30 23,19 14,12 25,12'/%3E%3Crect x='12' y='12' width='36' height='36' transform='rotate(45 30 30)'/%3E%3Crect x='18' y='18' width='24' height='24'/%3E%3Cline x1='0' y1='0' x2='30' y2='30'/%3E%3Cline x1='60' y1='0' x2='30' y2='30'/%3E%3Cline x1='0' y1='60' x2='30' y2='30'/%3E%3Cline x1='60' y1='60' x2='30' y2='30'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.lang-ar body, html[lang="ar"] body { font-family: 'Tajawal', sans-serif; }
+html[lang="ar"] { font-family: 'Tajawal', sans-serif; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--ink); }
+::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+/* SCROLL PROGRESS */
+#scroll-progress {
+  position: fixed; top: 0; left: 0; z-index: 10001;
+  height: 3px; background: linear-gradient(90deg, var(--gold-dim), var(--gold), var(--gold-light));
+  width: 0%; transition: width 0.1s linear;
+}
+
+/* LOADER */
+#loader {
+  position: fixed; inset: 0; background: var(--ink);
+  z-index: 9999; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 24px;
+}
+#loader-logo { width: 100px; height: 100px; }
+#loader-logo path { stroke-dasharray: 400; stroke-dashoffset: 400; animation: drawLogo 0.8s ease forwards; }
+@keyframes drawLogo { to { stroke-dashoffset: 0; } }
+#loader-name { display: flex; gap: 2px; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 700; font-size: clamp(24px, 4vw, 36px); color: var(--cream); overflow: hidden; }
+#loader-name span { opacity: 0; transform: translateY(20px); animation: letterIn 0.4s ease forwards; }
+#loader-tagline { color: var(--gold); font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0; animation: fadeUp 0.5s ease 1.6s forwards; }
+#loader-bar-wrap { width: 200px; height: 2px; background: var(--bronze-dim); border-radius: 1px; overflow: hidden; opacity: 0; animation: fadeUp 0.3s ease 1.6s forwards; }
+#loader-bar { height: 100%; width: 0%; background: linear-gradient(90deg, var(--gold-dim), var(--gold)); border-radius: 1px; animation: fillBar 0.9s ease 1.7s forwards; }
+@keyframes letterIn { to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeUp { to { opacity: 1; } }
+@keyframes fillBar { to { width: 100%; } }
+
+/* HEADER */
+#header {
+  position: fixed; top: 0; width: 100%; z-index: 1000;
+  padding: 18px 40px; display: flex; align-items: center; justify-content: space-between;
+  transition: var(--transition);
+}
+#header.scrolled {
+  backdrop-filter: blur(20px) saturate(1.8);
+  background: rgba(8,7,10,0.85);
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+  padding: 12px 40px;
+}
+.header-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.header-logo svg { transition: var(--transition); }
+.header-logo:hover svg .crescent { transform-origin: center; transform: rotate(2deg); filter: drop-shadow(0 0 8px var(--gold)); }
+.logo-text { display: flex; flex-direction: column; }
+.logo-name { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 700; font-size: 22px; color: var(--cream); line-height: 1; }
+.logo-sub { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-variant: small-caps; }
+
+nav { display: flex; align-items: center; gap: 8px; }
+nav a {
+  color: var(--cream-soft); text-decoration: none; font-size: 13px;
+  letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 14px;
+  position: relative; transition: color 0.3s;
+}
+nav a::after {
+  content: ''; position: absolute; bottom: 0; left: 14px; right: 14px;
+  height: 1px; background: var(--gold); transform: scaleX(0);
+  transform-origin: left; transition: transform 0.3s ease;
+}
+nav a:hover { color: var(--cream); }
+nav a:hover::after, nav a.active::after { transform: scaleX(1); }
+nav a.active { color: var(--gold); }
+
+.header-right { display: flex; align-items: center; gap: 16px; }
+
+.lang-switcher { display: flex; gap: 6px; }
+.lang-btn {
+  background: transparent; border: 1px solid transparent;
+  color: var(--cream-soft); padding: 4px 8px; border-radius: var(--radius-sm);
+  cursor: pointer; font-size: 11px; letter-spacing: 0.05em; transition: var(--transition);
+}
+.lang-btn:hover { color: var(--cream); border-color: var(--gold-dim); }
+.lang-btn.active { border-color: var(--gold); background: rgba(201,168,76,0.1); color: var(--gold); }
+
+.cart-btn {
+  background: none; border: none; cursor: pointer; position: relative;
+  color: var(--cream); padding: 8px; border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+.cart-btn:hover { color: var(--gold); }
+.cart-badge {
+  position: absolute; top: 0; right: 0; background: var(--gold);
+  color: var(--ink); border-radius: 50%; width: 18px; height: 18px;
+  font-size: 10px; font-weight: 700; display: flex; align-items: center; justify-content: center;
+  transition: var(--transition); font-family: system-ui, monospace;
+}
+.cart-badge.hidden { display: none; }
+.cart-badge.bounce { animation: badgeBounce 0.4s cubic-bezier(0.36,0.07,0.19,0.97); }
+@keyframes badgeBounce { 0%,100%{transform:scale(1)} 50%{transform:scale(1.4)} }
+
+/* HAMBURGER */
+.hamburger { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 8px; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--cream); border-radius: 2px; transition: var(--transition); }
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* MOBILE MENU */
+#mobile-menu {
+  position: fixed; inset: 0; background: var(--ink);
+  z-index: 999; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 8px;
+  opacity: 0; pointer-events: none; transition: opacity 0.3s;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cg fill='none' stroke='rgba(201,168,76,0.06)' stroke-width='0.8'%3E%3Cpolygon points='30,2 35,12 46,12 37,19 41,30 30,23 19,30 23,19 14,12 25,12'/%3E%3Crect x='12' y='12' width='36' height='36' transform='rotate(45 30 30)'/%3E%3Crect x='18' y='18' width='24' height='24'/%3E%3C/g%3E%3C/svg%3E");
+}
+#mobile-menu.open { opacity: 1; pointer-events: all; }
+#mobile-menu a {
+  color: var(--cream); text-decoration: none; font-family: 'Cormorant Garamond', serif;
+  font-style: italic; font-size: 32px; font-weight: 700; padding: 12px 40px;
+  opacity: 0; transform: translateY(20px); transition: color 0.3s;
+}
+#mobile-menu.open a { animation: mobileNavIn 0.4s ease forwards; }
+#mobile-menu a:hover { color: var(--gold); }
+#mobile-menu .mobile-lang { display: flex; gap: 12px; margin-top: 24px; opacity: 0; animation: none; }
+#mobile-menu.open .mobile-lang { animation: mobileNavIn 0.4s ease 0.4s forwards; }
+@keyframes mobileNavIn { to { opacity: 1; transform: translateY(0); } }
+
+/* HERO */
+#hero {
+  height: 100vh; display: flex; align-items: center; justify-content: center;
+  text-align: center; position: relative; overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 40% at 50% 50%, rgba(201,168,76,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-zellige {
+  position: absolute; inset: 0; opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cg fill='none' stroke='rgba(201,168,76,0.05)' stroke-width='0.8'%3E%3Cpolygon points='30,2 35,12 46,12 37,19 41,30 30,23 19,30 23,19 14,12 25,12'/%3E%3Crect x='12' y='12' width='36' height='36' transform='rotate(45 30 30)'/%3E%3Crect x='18' y='18' width='24' height='24'/%3E%3C/g%3E%3C/svg%3E");
+  will-change: transform;
+}
+.hero-corner { position: absolute; width: 120px; height: 120px; opacity: 0.3; }
+.hero-corner.tl { top: 80px; left: 40px; }
+.hero-corner.tr { top: 80px; right: 40px; transform: scaleX(-1); }
+.hero-corner.bl { bottom: 80px; left: 40px; transform: scaleY(-1); }
+.hero-corner.br { bottom: 80px; right: 40px; transform: scale(-1); }
+
+.hero-content { position: relative; z-index: 1; max-width: 800px; padding: 0 24px; }
+.hero-star-ornament { display: flex; justify-content: center; margin-bottom: 24px; }
+.hero-star-ornament svg { animation: rotateStar 60s linear infinite; }
+@keyframes rotateStar { to { transform: rotate(360deg); } }
+
+.hero-pretitle {
+  font-size: 12px; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 16px; font-family: 'Libre Baskerville', serif;
+}
+.hero-title {
+  font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 700;
+  font-size: clamp(48px, 8vw, 96px); color: var(--cream);
+  letter-spacing: 0.02em; line-height: 1.05; margin-bottom: 24px;
+}
+.hero-divider {
+  display: flex; align-items: center; justify-content: center;
+  gap: 12px; margin-bottom: 24px; color: var(--gold);
+}
+.hero-divider::before, .hero-divider::after {
+  content: ''; flex: 1; max-width: 120px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold));
+}
+.hero-divider::after { background: linear-gradient(270deg, transparent, var(--gold)); }
+
+.hero-typewriter {
+  min-height: 28px; font-style: italic; color: var(--cream-soft);
+  font-size: 16px; margin-bottom: 24px;
+}
+.hero-rating { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 32px; }
+.stars { color: var(--gold); font-size: 18px; letter-spacing: 2px; }
+.rating-text { color: var(--cream-soft); font-size: 14px; }
+
+.hero-ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--ink); padding: 14px 32px; border: none; border-radius: var(--radius-md);
+  font-family: 'Libre Baskerville', serif; font-weight: 700; font-size: 14px;
+  letter-spacing: 0.08em; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center;
+  gap: 8px; transition: var(--transition); text-transform: uppercase;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,168,76,0.3); }
+.btn-secondary {
+  background: transparent; color: var(--gold); padding: 14px 32px;
+  border: 1px solid var(--gold); border-radius: var(--radius-md);
+  font-family: 'Libre Baskerville', serif; font-size: 14px; letter-spacing: 0.08em;
+  cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+  transition: var(--transition); text-transform: uppercase;
+}
+.btn-secondary:hover { background: rgba(201,168,76,0.1); transform: translateY(-2px); }
+
+.hero-open-badge {
+  display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px;
+  background: rgba(46,204,113,0.1); border: 1px solid rgba(46,204,113,0.3);
+  border-radius: var(--radius-xl); font-size: 13px; color: var(--success);
+  animation: pulse 2s ease infinite;
+}
+.hero-open-badge::before {
+  content: ''; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--success); animation: pulseDot 2s ease infinite;
+}
+@keyframes pulse { 0%,100%{box-shadow:0 0 0 0 rgba(46,204,113,0.2)} 50%{box-shadow:0 0 0 8px rgba(46,204,113,0)} }
+@keyframes pulseDot { 0%,100%{opacity:1} 50%{opacity:0.5} }
+
+.scroll-arrow {
+  position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
+  color: var(--gold); animation: bounce 2s ease infinite; cursor: pointer;
+}
+@keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+
+/* STATS */
+#stats {
+  padding: 60px 40px; max-width: 1200px; margin: 0 auto;
+}
+.stats-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+  background: rgba(201,168,76,0.05); backdrop-filter: blur(10px);
+  border: 1px solid rgba(201,168,76,0.2); border-radius: var(--radius-md);
+  padding: 40px;
+}
+.stat-item { text-align: center; }
+.stat-icon { margin-bottom: 12px; display: flex; justify-content: center; }
+.stat-value {
+  font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 700;
+  font-size: clamp(32px, 4vw, 48px); color: var(--gold); line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.stat-label { font-size: 13px; color: var(--cream-soft); margin-top: 6px; letter-spacing: 0.05em; }
+
+/* SECTIONS COMMON */
+.section { padding: 80px 40px; max-width: 1200px; margin: 0 auto; }
+.section-header { text-align: center; margin-bottom: 60px; }
+.section-ornament { display: flex; justify-content: center; margin-bottom: 16px; }
+.section-title {
+  font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 700;
+  font-size: clamp(32px, 5vw, 52px); color: var(--cream); letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+.section-subtitle { color: var(--cream-soft); font-size: 15px; max-width: 500px; margin: 0 auto; }
+
+/* MENU */
+.search-bar {
+  display: flex; align-items: center; gap: 12px; max-width: 500px; margin: 0 auto 40px;
+  background: var(--ink-soft); border: 1px solid var(--bronze-dim); border-radius: var(--radius-md);
+  padding: 12px 18px; transition: border-color 0.3s;
+}
+.search-bar:focus-within { border-color: var(--gold-dim); }
+.search-bar input {
+  flex: 1; background: none; border: none; color: var(--cream); font-family: 'Libre Baskerville', serif;
+  font-size: 15px; outline: none;
+}
+.search-bar input::placeholder { color: var(--bronze); }
+.search-clear { background: none; border: none; color: var(--bronze); cursor: pointer; transition: color 0.3s; padding: 4px; }
+.search-clear:hover { color: var(--cream); }
+
+.results-count { text-align: center; color: var(--cream-soft); font-size: 13px; margin-bottom: 24px; }
+
+/* CATEGORY TABS */
+.category-tabs-wrap { overflow-x: auto; margin-bottom: 40px; scrollbar-width: none; }
+.category-tabs-wrap::-webkit-scrollbar { display: none; }
+.category-tabs { display: flex; gap: 8px; width: max-content; margin: 0 auto; position: relative; padding-bottom: 2px; }
+.tab-btn {
+  background: var(--ink-soft); border: 1px solid var(--bronze-dim); color: var(--cream-soft);
+  padding: 10px 20px; border-radius: var(--radius-xl); cursor: pointer; font-family: 'Libre Baskerville', serif;
+  font-size: 13px; letter-spacing: 0.05em; white-space: nowrap; transition: var(--transition);
+  display: flex; align-items: center; gap: 8px;
+}
+.tab-btn:hover { border-color: var(--gold-dim); color: var(--cream); }
+.tab-btn.active { background: rgba(201,168,76,0.1); border-color: var(--gold); color: var(--gold); }
+.tab-count {
+  background: var(--bronze-dim); color: var(--cream-soft); border-radius: 50%;
+  width: 20px; height: 20px; font-size: 11px; display: flex; align-items: center; justify-content: center;
+  font-variant-numeric: tabular-nums;
+}
+.tab-btn.active .tab-count { background: var(--gold); color: var(--ink); }
+
+/* MENU GRID */
+.menu-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px;
+}
+.menu-empty {
+  grid-column: 1 / -1; text-align: center; padding: 60px 20px;
+  color: var(--cream-soft);
+}
+.menu-empty svg { margin: 0 auto 16px; display: block; opacity: 0.5; }
+.menu-empty h3 { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 24px; color: var(--cream); margin-bottom: 8px; }
+.menu-empty p { font-size: 14px; }
+
+/* MENU CARD */
+.menu-card {
+  background: var(--ink-card); border: 1px solid var(--bronze-dim); border-radius: var(--radius-md);
+  overflow: hidden; position: relative; transition: var(--transition);
+  display: flex; flex-direction: column;
+}
+.menu-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-gold); border-color: rgba(201,168,76,0.3); }
+.menu-card.special { border-color: var(--gold); border-width: 2px; }
+.menu-card.special-wide { grid-column: span 2; }
+
+.card-badges { position: absolute; top: 12px; left: 12px; z-index: 2; display: flex; gap: 6px; flex-wrap: wrap; }
+.badge {
+  padding: 4px 10px; border-radius: var(--radius-xl); font-size: 10px; letter-spacing: 0.08em;
+  text-transform: uppercase; font-weight: 700; backdrop-filter: blur(8px);
+}
+.badge-popular { background: rgba(201,168,76,0.85); color: var(--ink); }
+.badge-new { background: rgba(46,204,113,0.85); color: var(--ink); }
+.badge-veg { background: rgba(46,204,113,0.2); color: #2ECC71; border: 1px solid rgba(46,204,113,0.4); }
+.badge-special { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid var(--gold); }
+
+.card-img-wrap { position: relative; height: 200px; overflow: hidden; }
+.menu-card.special-wide .card-img-wrap { height: 240px; }
+.card-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.menu-card:hover .card-img-wrap img { transform: scale(1.05); }
+.card-cat-badge {
+  position: absolute; bottom: 10px; left: 10px; background: rgba(8,7,10,0.8);
+  color: var(--cream-soft); padding: 4px 10px; border-radius: var(--radius-xl);
+  font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; backdrop-filter: blur(8px);
+}
+
+.card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.card-name { font-size: 16px; font-weight: 600; color: var(--cream); line-height: 1.3; }
+.card-desc { font-size: 13px; color: var(--cream-soft); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; flex: 1; }
+mark { background: rgba(201,168,76,0.25); color: var(--gold); border-radius: 2px; }
+
+.spice-level { display: flex; gap: 4px; align-items: center; }
+.spice-icon { width: 14px; height: 14px; }
+.spice-icon.active-1 { color: var(--spice-1); }
+.spice-icon.active-2 { color: var(--spice-2); }
+.spice-icon.active-3 { color: var(--spice-3); }
+.spice-icon.inactive { color: var(--bronze-dim); }
+
+.card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 4px; }
+.card-price { display: flex; align-items: baseline; gap: 8px; }
+.price-current { font-size: 18px; font-weight: 700; color: var(--gold); font-family: system-ui, monospace; }
+.price-original { font-size: 13px; color: var(--bronze); text-decoration: line-through; font-family: system-ui, monospace; }
+.price-badge { font-size: 11px; background: var(--danger); color: white; padding: 2px 6px; border-radius: var(--radius-sm); font-weight: 700; }
+
+.card-actions { display: flex; align-items: center; gap: 8px; }
+.qty-controls { display: flex; align-items: center; gap: 0; background: var(--ink-soft); border: 1px solid var(--bronze-dim); border-radius: var(--radius-sm); overflow: hidden; }
+.qty-btn { background: none; border: none; color: var(--cream-soft); width: 28px; height: 28px; cursor: pointer; font-size: 16px; transition: var(--transition); display: flex; align-items: center; justify-content: center; }
+.qty-btn:hover { background: var(--bronze-dim); color: var(--cream); }
+.qty-value { width: 28px; text-align: center; font-size: 14px; color: var(--cream); font-family: system-ui, monospace; }
+.btn-add {
+  background: linear-gradient(135deg, var(--gold-dim), var(--gold));
+  color: var(--ink); border: none; padding: 8px 14px; border-radius: var(--radius-sm);
+  font-size: 12px; font-weight: 700; cursor: pointer; letter-spacing: 0.05em;
+  transition: var(--transition); white-space: nowrap; position: relative; overflow: hidden;
+}
+.btn-add:hover { background: linear-gradient(135deg, var(--gold), var(--gold-light)); transform: scale(1.02); }
+.btn-add::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%); opacity: 0; transition: opacity 0.3s; }
+.btn-add.ripple::after { opacity: 1; animation: rippleOut 0.4s ease; }
+@keyframes rippleOut { from{opacity:1;transform:scale(0)} to{opacity:0;transform:scale(2)} }
+
+/* CART FLY ANIMATION */
+.fly-item {
+  position: fixed; width: 40px; height: 40px; border-radius: 50%;
+  object-fit: cover; pointer-events: none; z-index: 9000;
+  border: 2px solid var(--gold);
+}
+
+/* CART SIDEBAR */
+#cart-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 1100;
+  opacity: 0; pointer-events: none; transition: opacity 0.35s;
+}
+#cart-overlay.open { opacity: 1; pointer-events: all; }
+
+#cart-sidebar {
+  position: fixed; top: 0; right: 0; bottom: 0; width: min(420px, 100vw);
+  background: var(--ink-soft); z-index: 1101; display: flex; flex-direction: column;
+  transform: translateX(110%); transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  border-left: 1px solid var(--bronze-dim);
+}
+html[dir="rtl"] #cart-sidebar { right: auto; left: 0; transform: translateX(-110%); border-left: none; border-right: 1px solid var(--bronze-dim); }
+#cart-sidebar.open { transform: translateX(0); }
+html[dir="rtl"] #cart-sidebar.open { transform: translateX(0); }
+
+.cart-header {
+  padding: 24px; border-bottom: 1px solid var(--bronze-dim);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.cart-header-title { display: flex; align-items: center; gap: 10px; font-family: 'Cormorant Garamond', serif; font-size: 22px; font-style: italic; color: var(--cream); }
+.cart-close { background: none; border: none; color: var(--cream-soft); cursor: pointer; transition: color 0.3s; padding: 4px; }
+.cart-close:hover { color: var(--cream); }
+
+.cart-items { flex: 1; overflow-y: auto; padding: 16px 24px; }
+.cart-empty-state { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 16px; color: var(--cream-soft); text-align: center; }
+.cart-empty-state svg { opacity: 0.4; }
+.cart-empty-state h3 { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 22px; color: var(--cream); }
+.cart-empty-state p { font-size: 14px; }
+
+.cart-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--bronze-dim); align-items: flex-start; }
+.cart-item:last-child { border-bottom: none; }
+.cart-item-img { width: 56px; height: 56px; object-fit: cover; border-radius: var(--radius-sm); flex-shrink: 0; }
+.cart-item-info { flex: 1; min-width: 0; }
+.cart-item-name { font-size: 14px; color: var(--cream); font-weight: 600; line-height: 1.3; margin-bottom: 4px; }
+.cart-item-price { font-size: 13px; color: var(--gold); font-family: system-ui, monospace; }
+.cart-item-controls { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+.cart-remove { background: none; border: none; color: var(--bronze); cursor: pointer; padding: 4px; transition: color 0.3s; flex-shrink: 0; }
+.cart-remove:hover { color: var(--danger); }
+
+.promo-section { padding: 12px 24px; border-top: 1px solid var(--bronze-dim); }
+.promo-input-wrap { display: flex; gap: 8px; }
+.promo-input {
+  flex: 1; background: var(--ink-card); border: 1px solid var(--bronze-dim);
+  color: var(--cream); padding: 10px 14px; border-radius: var(--radius-sm);
+  font-family: 'Libre Baskerville', serif; font-size: 13px; outline: none; transition: border-color 0.3s;
+}
+.promo-input:focus { border-color: var(--gold-dim); }
+.promo-input::placeholder { color: var(--bronze); }
+.promo-apply { background: var(--gold-dim); color: var(--cream); border: none; padding: 10px 16px; border-radius: var(--radius-sm); cursor: pointer; font-size: 13px; transition: var(--transition); }
+.promo-apply:hover { background: var(--gold); color: var(--ink); }
+
+.cart-form { padding: 16px 24px; border-top: 1px solid var(--bronze-dim); }
+.form-field { margin-bottom: 12px; }
+.form-label { display: block; font-size: 12px; color: var(--cream-soft); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 6px; }
+.form-input {
+  width: 100%; background: var(--ink-card); border: 1px solid var(--bronze-dim);
+  color: var(--cream); padding: 10px 14px; border-radius: var(--radius-sm);
+  font-family: 'Libre Baskerville', serif; font-size: 14px; outline: none;
+  transition: border-color 0.3s; resize: vertical;
+}
+.form-input:focus { border-color: var(--gold-dim); }
+.form-input::placeholder { color: var(--bronze); }
+.form-input.error { border-color: var(--danger); animation: shake 0.4s; }
+.field-error { font-size: 12px; color: var(--danger); margin-top: 4px; }
+@keyframes shake { 0%,100%{transform:translateX(0)} 20%,60%{transform:translateX(-6px)} 40%,80%{transform:translateX(6px)} }
+
+.cart-summary { padding: 16px 24px; border-top: 1px solid var(--bronze-dim); }
+.summary-row { display: flex; justify-content: space-between; font-size: 14px; color: var(--cream-soft); margin-bottom: 8px; }
+.summary-row.total { color: var(--cream); font-size: 16px; font-weight: 700; border-top: 1px solid var(--bronze-dim); padding-top: 12px; margin-top: 4px; }
+.summary-row.total .amount { color: var(--gold); font-family: system-ui, monospace; font-size: 18px; }
+
+.cart-actions { padding: 16px 24px; display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--bronze-dim); }
+.btn-whatsapp {
+  background: #25D366; color: white; border: none; padding: 14px;
+  border-radius: var(--radius-md); cursor: pointer; font-size: 15px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  transition: var(--transition); letter-spacing: 0.03em;
+}
+.btn-whatsapp:hover { background: #20bf5c; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(37,211,102,0.3); }
+.btn-clear { background: none; color: var(--bronze); border: 1px solid var(--bronze-dim); padding: 10px; border-radius: var(--radius-md); cursor: pointer; font-size: 13px; transition: var(--transition); display: flex; align-items: center; justify-content: center; gap: 8px; }
+.btn-clear:hover { border-color: var(--danger); color: var(--danger); }
+
+/* ABOUT */
+#about { background: var(--ink-soft); }
+.about-wrap { max-width: 1200px; margin: 0 auto; padding: 80px 40px; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-text p { color: var(--cream-soft); line-height: 1.85; margin-bottom: 20px; font-size: 15px; }
+.why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px; }
+.why-card { background: var(--ink-card); border: 1px solid var(--bronze-dim); border-radius: var(--radius-md); padding: 20px; transition: var(--transition); }
+.why-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+.why-icon { width: 36px; height: 36px; color: var(--gold); margin-bottom: 10px; }
+.why-title { font-size: 15px; font-weight: 600; color: var(--cream); margin-bottom: 6px; }
+.why-desc { font-size: 13px; color: var(--cream-soft); line-height: 1.5; }
+
+.about-map { position: relative; }
+.map-frame {
+  width: 100%; border-radius: var(--radius-lg); overflow: hidden;
+  border: 2px solid var(--bronze-dim); position: relative;
+}
+.map-frame::before {
+  content: ''; position: absolute; inset: -2px; border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--gold-dim), transparent, var(--gold-dim));
+  z-index: -1;
+}
+.map-frame iframe { display: block; width: 100%; height: 360px; border: none; }
+
+/* GALLERY */
+.gallery-grid { columns: 3 200px; gap: 16px; }
+.gallery-item { break-inside: avoid; margin-bottom: 16px; position: relative; cursor: pointer; overflow: hidden; border-radius: var(--radius-md); }
+.gallery-item img { width: 100%; display: block; transition: transform 0.5s ease; }
+.gallery-item:hover img { transform: scale(1.05); }
+.gallery-overlay {
+  position: absolute; inset: 0; background: rgba(201,168,76,0.3);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; transition: opacity 0.3s; border-radius: var(--radius-md);
+}
+.gallery-item:hover .gallery-overlay { opacity: 1; }
+
+/* LIGHTBOX */
+#lightbox {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 9998;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none; transition: opacity 0.3s;
+}
+#lightbox.open { opacity: 1; pointer-events: all; }
+#lightbox img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: var(--radius-md); }
+.lightbox-close { position: absolute; top: 24px; right: 24px; background: rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.2); color: white; width: 44px; height: 44px; border-radius: 50%; cursor: pointer; font-size: 20px; display: flex; align-items: center; justify-content: center; transition: var(--transition); }
+.lightbox-close:hover { background: rgba(201,168,76,0.3); }
+.lightbox-prev, .lightbox-next { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.2); color: white; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; font-size: 20px; display: flex; align-items: center; justify-content: center; transition: var(--transition); }
+.lightbox-prev:hover, .lightbox-next:hover { background: rgba(201,168,76,0.3); }
+.lightbox-prev { left: 24px; }
+.lightbox-next { right: 24px; }
+
+/* TESTIMONIALS */
+#testimonials { background: var(--ink-soft); }
+.testimonials-wrap { max-width: 1200px; margin: 0 auto; padding: 80px 40px; }
+.testimonial-carousel { position: relative; overflow: hidden; }
+.testimonial-track { display: flex; transition: transform 0.5s cubic-bezier(0.4,0,0.2,1); }
+.testimonial-slide { min-width: 100%; padding: 0 20px; }
+.testimonial-card {
+  max-width: 700px; margin: 0 auto; background: rgba(201,168,76,0.05);
+  backdrop-filter: blur(10px); border: 1px solid rgba(201,168,76,0.15);
+  border-radius: var(--radius-lg); padding: 48px; text-align: center; position: relative;
+}
+.testimonial-quote {
+  position: absolute; top: 16px; left: 24px; font-family: Georgia, serif;
+  font-size: 80px; line-height: 1; color: var(--gold-dim); opacity: 0.3; pointer-events: none;
+}
+.testimonial-stars { color: var(--gold); font-size: 20px; letter-spacing: 3px; margin-bottom: 20px; }
+.testimonial-text { font-style: italic; color: var(--cream-soft); font-size: 16px; line-height: 1.8; margin-bottom: 24px; }
+.testimonial-author { display: flex; align-items: center; justify-content: center; gap: 16px; }
+.author-avatar { width: 48px; height: 48px; background: linear-gradient(135deg, var(--gold-dim), var(--gold)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: var(--ink); flex-shrink: 0; }
+.author-name { font-size: 15px; color: var(--cream); font-weight: 600; }
+.author-meta { font-size: 12px; color: var(--bronze); display: flex; align-items: center; gap: 8px; }
+
+.carousel-nav { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 32px; }
+.carousel-btn { background: var(--ink-card); border: 1px solid var(--bronze-dim); color: var(--cream-soft); width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; transition: var(--transition); }
+.carousel-btn:hover { border-color: var(--gold); color: var(--gold); }
+.carousel-dots { display: flex; gap: 8px; }
+.carousel-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--bronze-dim); cursor: pointer; transition: var(--transition); border: none; }
+.carousel-dot.active { background: var(--gold); width: 24px; border-radius: 4px; }
+
+/* INFO BAND */
+#info-band { border-top: 1px solid var(--bronze-dim); border-bottom: 1px solid var(--bronze-dim); }
+.info-band-wrap { max-width: 1200px; margin: 0 auto; padding: 60px 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.info-col h3 { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 22px; color: var(--gold); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+.info-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--bronze-dim); font-size: 14px; }
+.info-row:last-child { border-bottom: none; }
+.info-row .day { color: var(--cream-soft); }
+.info-row .hours { color: var(--cream); }
+.info-badges { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+.info-badge { padding: 4px 12px; border: 1px solid var(--bronze-dim); border-radius: var(--radius-xl); font-size: 12px; color: var(--cream-soft); display: flex; align-items: center; gap: 6px; }
+.info-badge svg { color: var(--gold); }
+.contact-item { display: flex; align-items: center; gap: 12px; padding: 10px 0; font-size: 14px; color: var(--cream-soft); text-decoration: none; border-bottom: 1px solid var(--bronze-dim); transition: color 0.3s; }
+.contact-item:last-child { border-bottom: none; }
+.contact-item:hover { color: var(--gold); }
+.contact-item svg { color: var(--gold); flex-shrink: 0; }
+.social-row { display: flex; gap: 12px; margin-top: 16px; }
+.social-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--bronze-dim); display: flex; align-items: center; justify-content: center; color: var(--cream-soft); text-decoration: none; transition: var(--transition); }
+.social-btn:hover { border-color: var(--gold); color: var(--gold); background: rgba(201,168,76,0.1); }
+
+/* FOOTER */
+footer {
+  background: var(--ink-soft); border-top: 1px solid var(--bronze-dim);
+  padding: 60px 40px 40px; text-align: center;
+}
+.footer-logo { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 700; font-size: 32px; color: var(--cream); margin-bottom: 8px; }
+.footer-tagline { color: var(--gold-dim); font-size: 13px; letter-spacing: 0.1em; margin-bottom: 32px; }
+.footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
+.footer-links a { color: var(--cream-soft); text-decoration: none; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.3s; }
+.footer-links a:hover { color: var(--gold); }
+.footer-divider { width: 60px; height: 1px; background: var(--bronze-dim); margin: 24px auto; }
+.footer-copy { color: var(--bronze); font-size: 13px; }
+
+/* FLOATING ELEMENTS */
+#whatsapp-float {
+  position: fixed; bottom: 24px; right: 24px; z-index: 999;
+  width: 56px; height: 56px; background: #25D366; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 16px rgba(37,211,102,0.4); cursor: pointer;
+  text-decoration: none; animation: waPulse 3s ease infinite;
+  transition: transform 0.3s;
+}
+#whatsapp-float:hover { transform: scale(1.1); }
+html[dir="rtl"] #whatsapp-float { right: auto; left: 24px; }
+@keyframes waPulse { 0%,100%{box-shadow:0 4px 16px rgba(37,211,102,0.4)} 50%{box-shadow:0 4px 24px rgba(37,211,102,0.6)} }
+
+#back-to-top {
+  position: fixed; bottom: 88px; right: 24px; z-index: 999;
+  width: 44px; height: 44px; background: var(--ink-card); border: 1px solid var(--bronze-dim);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; color: var(--cream-soft); transition: var(--transition);
+  opacity: 0; pointer-events: none;
+}
+#back-to-top.visible { opacity: 1; pointer-events: all; }
+#back-to-top:hover { border-color: var(--gold); color: var(--gold); }
+html[dir="rtl"] #back-to-top { right: auto; left: 24px; }
+
+#mobile-order-bar {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 998;
+  background: #25D366; color: white; padding: 14px; text-align: center;
+  font-weight: 700; font-size: 15px; display: none; align-items: center;
+  justify-content: center; gap: 10px; cursor: pointer;
+}
+
+/* TOAST */
+#toast-container {
+  position: fixed; bottom: 24px; right: 24px; z-index: 9999;
+  display: flex; flex-direction: column; gap: 10px; align-items: flex-end;
+}
+html[dir="rtl"] #toast-container { right: auto; left: 24px; align-items: flex-start; }
+.toast {
+  padding: 12px 20px; border-radius: var(--radius-md); font-size: 14px;
+  display: flex; align-items: center; gap: 10px; max-width: 300px;
+  animation: toastIn 0.3s ease; box-shadow: var(--shadow-card);
+}
+.toast.success { background: rgba(201,168,76,0.95); color: var(--ink); }
+.toast.error { background: rgba(231,76,60,0.95); color: white; }
+.toast.info { background: rgba(154,138,106,0.95); color: var(--cream); }
+.toast.out { animation: toastOut 0.3s ease forwards; }
+@keyframes toastIn { from{opacity:0;transform:translateX(20px)} to{opacity:1;transform:translateX(0)} }
+@keyframes toastOut { to{opacity:0;transform:translateX(20px)} }
+
+/* COOKIE BANNER */
+#cookie-banner {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 1050;
+  background: var(--ink-card); border-top: 1px solid var(--bronze-dim);
+  padding: 16px 24px; display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; flex-wrap: wrap; animation: slideUp 0.4s ease;
+  transform: translateY(0);
+}
+#cookie-banner.hidden { animation: slideDown 0.3s ease forwards; }
+@keyframes slideUp { from{transform:translateY(100%)} }
+@keyframes slideDown { to{transform:translateY(100%)} }
+.cookie-text { color: var(--cream-soft); font-size: 13px; flex: 1; }
+.cookie-btns { display: flex; gap: 10px; }
+.cookie-accept { background: var(--gold); color: var(--ink); border: none; padding: 8px 16px; border-radius: var(--radius-sm); cursor: pointer; font-size: 13px; font-weight: 700; transition: var(--transition); }
+.cookie-accept:hover { background: var(--gold-light); }
+.cookie-decline { background: none; color: var(--bronze); border: 1px solid var(--bronze-dim); padding: 8px 16px; border-radius: var(--radius-sm); cursor: pointer; font-size: 13px; transition: var(--transition); }
+.cookie-decline:hover { border-color: var(--danger); color: var(--danger); }
+
+/* PRINT */
+@media print {
+  #loader, #header, #hero, #stats, #about, #gallery, #testimonials, #info-band, footer,
+  #whatsapp-float, #back-to-top, #mobile-order-bar, #toast-container, #cookie-banner,
+  #cart-overlay, #cart-sidebar, #lightbox, #scroll-progress, .section-header, .search-bar,
+  .category-tabs-wrap, .results-count { display: none !important; }
+  body { background: white; color: black; font-size: 12px; }
+  #menu { display: block; padding: 20px; }
+  .menu-grid { columns: 3; display: block; }
+  .menu-card { break-inside: avoid; margin-bottom: 12px; border: 1px solid #ccc; background: white; color: black; }
+  .card-name { color: black; }
+  .card-desc { color: #555; }
+  .price-current { color: #333; }
+  .card-img-wrap { display: none; }
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .info-band-wrap { grid-template-columns: 1fr; }
+  .menu-card.special-wide { grid-column: span 1; }
+}
+
+@media (max-width: 768px) {
+  #header { padding: 16px 20px; }
+  #header.scrolled { padding: 12px 20px; }
+  nav { display: none; }
+  .hamburger { display: flex; }
+  .section { padding: 60px 20px; }
+  .about-wrap, .testimonials-wrap { padding: 60px 20px; }
+  .info-band-wrap { padding: 60px 20px; }
+  footer { padding: 40px 20px; }
+  #stats { padding: 40px 20px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); padding: 24px; gap: 16px; }
+  .gallery-grid { columns: 2 140px; }
+  .hero-corner { width: 70px; height: 70px; }
+  #mobile-order-bar { display: flex; }
+  #whatsapp-float { bottom: 64px; }
+  #back-to-top { bottom: 108px; }
+  .menu-grid { grid-template-columns: 1fr 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .menu-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .hero-ctas { flex-direction: column; align-items: center; }
+  .gallery-grid { columns: 2 120px; }
+}
+</style>
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <svg id="loader-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path class="crescent" d="M50 10 C28 10 10 28 10 50 C10 72 28 90 50 90 C38 82 30 67 30 50 C30 33 38 18 50 10Z" stroke="#C9A84C" stroke-width="2" fill="rgba(201,168,76,0.1)"/>
+    <path d="M65 25 L67 31 L73 31 L68 35 L70 41 L65 37 L60 41 L62 35 L57 31 L63 31Z" stroke="#C9A84C" stroke-width="1.5" fill="rgba(201,168,76,0.2)"/>
+    <circle cx="50" cy="50" r="38" stroke="#C9A84C" stroke-width="0.5" stroke-dasharray="4 6"/>
+  </svg>
+  <div id="loader-name"></div>
+  <div id="loader-tagline">Saveurs Authentiques du Maroc</div>
+  <div id="loader-bar-wrap"><div id="loader-bar"></div></div>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <a href="#hero" class="header-logo">
+    <svg width="42" height="42" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="crescent" d="M50 8 C26 8 8 26 8 50 C8 74 26 92 50 92 C36 84 28 68 28 50 C28 32 36 16 50 8Z" fill="rgba(201,168,76,0.15)" stroke="#C9A84C" stroke-width="2"/>
+      <path d="M66 22 L68.5 29.5 L76.5 29.5 L70.2 34.1 L72.7 41.6 L66.4 37 L60.1 41.6 L62.6 34.1 L56.3 29.5 L64.3 29.5Z" fill="#C9A84C" opacity="0.85"/>
+    </svg>
+    <div class="logo-text">
+      <span class="logo-name">Snack El Idrissi</span>
+      <span class="logo-sub">Casablanca</span>
+    </div>
+  </a>
+
+  <nav>
+    <a href="#hero" class="nav-link active" data-i18n="nav_home">Accueil</a>
+    <a href="#menu" class="nav-link" data-i18n="nav_menu">Menu</a>
+    <a href="#about" class="nav-link" data-i18n="nav_about">À propos</a>
+    <a href="#gallery" class="nav-link" data-i18n="nav_gallery">Galerie</a>
+    <a href="#info-band" class="nav-link" data-i18n="nav_contact">Contact</a>
+  </nav>
+
+  <div class="header-right">
+    <div class="lang-switcher">
+      <button class="lang-btn" onclick="setLanguage('ar')" aria-label="Arabe">🇲🇦 AR</button>
+      <button class="lang-btn active" onclick="setLanguage('fr')" aria-label="Français">🇫🇷 FR</button>
+      <button class="lang-btn" onclick="setLanguage('en')" aria-label="English">🇬🇧 EN</button>
+    </div>
+    <button class="cart-btn" onclick="openCart()" aria-label="Panier">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+      </svg>
+      <span class="cart-badge hidden" id="cart-badge">0</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation">
+  <a href="#hero" class="nav-link" data-i18n="nav_home" onclick="closeMobileMenu()" style="animation-delay:0ms">Accueil</a>
+  <a href="#menu" class="nav-link" data-i18n="nav_menu" onclick="closeMobileMenu()" style="animation-delay:80ms">Menu</a>
+  <a href="#about" class="nav-link" data-i18n="nav_about" onclick="closeMobileMenu()" style="animation-delay:160ms">À propos</a>
+  <a href="#gallery" class="nav-link" data-i18n="nav_gallery" onclick="closeMobileMenu()" style="animation-delay:240ms">Galerie</a>
+  <a href="#info-band" class="nav-link" data-i18n="nav_contact" onclick="closeMobileMenu()" style="animation-delay:320ms">Contact</a>
+  <div class="mobile-lang">
+    <button class="lang-btn" onclick="setLanguage('ar');closeMobileMenu()">🇲🇦 AR</button>
+    <button class="lang-btn active" onclick="setLanguage('fr');closeMobileMenu()">🇫🇷 FR</button>
+    <button class="lang-btn" onclick="setLanguage('en');closeMobileMenu()">🇬🇧 EN</button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-zellige" id="hero-zellige"></div>
+  
+  <!-- Corner ornaments -->
+  <svg class="hero-corner tl" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,0 L60,0 L60,10 L10,10 L10,60 L0,60Z" stroke="#C9A84C" stroke-width="1" fill="none"/>
+    <path d="M20,20 L50,20 L50,50 L20,50Z" stroke="#C9A84C" stroke-width="0.5" fill="none" transform="rotate(45 35 35)"/>
+    <circle cx="35" cy="35" r="8" stroke="#C9A84C" stroke-width="0.5" fill="none"/>
+    <path d="M35 20 L37 27 L45 27 L39 31 L41 38 L35 34 L29 38 L31 31 L25 27 L33 27Z" stroke="#C9A84C" stroke-width="0.5" fill="rgba(201,168,76,0.1)"/>
+  </svg>
+  <svg class="hero-corner tr" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,0 L60,0 L60,10 L10,10 L10,60 L0,60Z" stroke="#C9A84C" stroke-width="1" fill="none"/>
+    <path d="M20,20 L50,20 L50,50 L20,50Z" stroke="#C9A84C" stroke-width="0.5" fill="none" transform="rotate(45 35 35)"/>
+    <circle cx="35" cy="35" r="8" stroke="#C9A84C" stroke-width="0.5" fill="none"/>
+  </svg>
+  <svg class="hero-corner bl" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,0 L60,0 L60,10 L10,10 L10,60 L0,60Z" stroke="#C9A84C" stroke-width="1" fill="none"/>
+    <path d="M20,20 L50,20 L50,50 L20,50Z" stroke="#C9A84C" stroke-width="0.5" fill="none" transform="rotate(45 35 35)"/>
+    <circle cx="35" cy="35" r="8" stroke="#C9A84C" stroke-width="0.5" fill="none"/>
+  </svg>
+  <svg class="hero-corner br" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,0 L60,0 L60,10 L10,10 L10,60 L0,60Z" stroke="#C9A84C" stroke-width="1" fill="none"/>
+    <path d="M20,20 L50,20 L50,50 L20,50Z" stroke="#C9A84C" stroke-width="0.5" fill="none" transform="rotate(45 35 35)"/>
+    <circle cx="35" cy="35" r="8" stroke="#C9A84C" stroke-width="0.5" fill="none"/>
+  </svg>
+
+  <div class="hero-content">
+    <div class="hero-star-ornament">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 4 L34.5 13 L43 10 L38 18 L46 22 L37 23 L40 32 L33 27 L32 36 L31 27 L24 32 L27 23 L18 22 L26 18 L21 10 L29.5 13Z" stroke="#C9A84C" stroke-width="1" fill="rgba(201,168,76,0.1)"/>
+        <path d="M32 10 L33.5 16 L39 14 L36 19 L41 21.5 L35 22 L37 28 L32.5 24.5 L32 30 L31.5 24.5 L27 28 L29 22 L23 21.5 L28 19 L25 14 L30.5 16Z" fill="rgba(201,168,76,0.2)" stroke="#C9A84C" stroke-width="0.5"/>
+        <circle cx="32" cy="32" r="28" stroke="#C9A84C" stroke-width="0.5" stroke-dasharray="3 5" opacity="0.4"/>
+      </svg>
+    </div>
+    <p class="hero-pretitle" data-i18n="hero_pretitle">Restaurant Marocain · Casablanca</p>
+    <h1 class="hero-title">Snack El Idrissi</h1>
+    <div class="hero-divider">◆ ─────── ◆ ─────── ◆</div>
+    <div class="hero-typewriter" id="hero-typewriter"></div>
+    <div class="hero-rating">
+      <span class="stars">★★★★½</span>
+      <span class="rating-text">4.5/5 · 46 avis Google</span>
+    </div>
+    <div class="hero-ctas">
+      <a href="#menu" class="btn-primary" data-i18n="cta_menu">Voir le Menu</a>
+      <button class="btn-secondary" onclick="openCart()" data-i18n="cta_order">Commander</button>
+    </div>
+    <div class="hero-open-badge" data-i18n="open_until">Ouvert · Jusqu'à 23h00</div>
+  </div>
+
+  <div class="scroll-arrow" onclick="document.getElementById('stats').scrollIntoView({behavior:'smooth'})">
+    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path d="M12 5v14M5 12l7 7 7-7"/>
+    </svg>
+  </div>
+</section>
+
+<!-- STATS -->
+<div id="stats">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-icon">
+        <svg width="32" height="32" fill="none" stroke="#C9A84C" stroke-width="2" viewBox="0 0 24 24">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+      </div>
+      <div class="stat-value" data-count="46">0</div>
+      <div class="stat-label" data-i18n="stat_reviews">Avis clients</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">
+        <svg width="32" height="32" fill="none" stroke="#C9A84C" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M12 15a7 7 0 100-14 7 7 0 000 14zM8.21 13.89L7 23l5-3 5 3-1.21-9.12"/>
+        </svg>
+      </div>
+      <div class="stat-value" data-count="4.5" data-decimal="1">0</div>
+      <div class="stat-label" data-i18n="stat_rating">Note Google</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">
+        <svg width="32" height="32" fill="none" stroke="#C9A84C" stroke-width="2" viewBox="0 0 24 24">
+          <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+        </svg>
+      </div>
+      <div class="stat-value" data-count="65">0</div>
+      <div class="stat-label" data-i18n="stat_price">Prix moyen MAD</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">
+        <svg width="32" height="32" fill="none" stroke="#C9A84C" stroke-width="2" viewBox="0 0 24 24">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+      </div>
+      <div class="stat-value" data-count="2010">0</div>
+      <div class="stat-label" data-i18n="stat_since">Fondé en</div>
+    </div>
+  </div>
+</div>
+
+<!-- MENU -->
+<section id="menu" class="section">
+  <div class="section-header">
+    <div class="section-ornament">
+      <svg width="40" height="20" viewBox="0 0 40 20" fill="none">
+        <line x1="0" y1="10" x2="14" y2="10" stroke="#C9A84C" stroke-width="1"/>
+        <circle cx="20" cy="10" r="4" stroke="#C9A84C" stroke-width="1" fill="rgba(201,168,76,0.1)"/>
+        <line x1="26" y1="10" x2="40" y2="10" stroke="#C9A84C" stroke-width="1"/>
+      </svg>
+    </div>
+    <h2 class="section-title" data-i18n="section_menu">Notre Menu</h2>
+    <p class="section-subtitle">Découvrez nos saveurs authentiques préparées avec passion</p>
+  </div>
+
+  <div class="search-bar">
+    <svg width="18" height="18" fill="none" stroke="#9A8A6A" stroke-width="2" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+    </svg>
+    <input type="text" id="search-input" data-i18n-placeholder="search_placeholder" placeholder="Rechercher un plat..." oninput="debouncedSearch()" aria-label="Rechercher">
+    <button class="search-clear" id="search-clear" onclick="clearSearch()" hidden aria-label="Effacer la recherche">✕</button>
+  </div>
+
+  <div class="results-count" id="results-count"></div>
+
+  <div class="category-tabs-wrap">
+    <div class="category-tabs" id="category-tabs"></div>
+  </div>
+
+  <div class="menu-grid" id="menu-grid"></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-wrap">
+    <div class="section-header">
+      <div class="section-ornament">
+        <svg width="40" height="20" viewBox="0 0 40 20" fill="none">
+          <line x1="0" y1="10" x2="14" y2="10" stroke="#C9A84C" stroke-width="1"/>
+          <circle cx="20" cy="10" r="4" stroke="#C9A84C" stroke-width="1" fill="rgba(201,168,76,0.1)"/>
+          <line x1="26" y1="10" x2="40" y2="10" stroke="#C9A84C" stroke-width="1"/>
+        </svg>
+      </div>
+      <h2 class="section-title" data-i18n="section_about">Notre Histoire</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p data-i18n="about_p1">Depuis 2010, Snack El Idrissi est une institution gastronomique à Casablanca, fondé avec la passion de partager la cuisine marocaine authentique. Notre snack a su conquérir le cœur de milliers de clients grâce à des recettes transmises de génération en génération.</p>
+        <p>Niché au cœur de Casablanca, nous proposons une cuisine marocaine fidèle aux traditions : grillades au charbon de bois, sandwichs généreux, salades fraîches et pâtisseries artisanales. Chaque plat est une invitation à un voyage culinaire au Maroc.</p>
+        <p>Notre équipe dédiée prépare chaque jour des plats avec des ingrédients frais sélectionnés avec soin, garantissant qualité et authenticité à chaque bouchée.</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:var(--gold);margin:24px 0 16px" data-i18n="why_title">Pourquoi nous choisir ?</h3>
+        <div class="why-grid">
+          <div class="why-card">
+            <svg class="why-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <div class="why-title" data-i18n="why_1_title">Cuisine Authentique</div>
+            <div class="why-desc" data-i18n="why_1_desc">Recettes transmises de génération en génération</div>
+          </div>
+          <div class="why-card">
+            <svg class="why-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div class="why-title" data-i18n="why_2_title">Service Express</div>
+            <div class="why-desc" data-i18n="why_2_desc">Commande prête en 10-15 minutes</div>
+          </div>
+          <div class="why-card">
+            <svg class="why-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            <div class="why-title" data-i18n="why_3_title">Prix Abordables</div>
+            <div class="why-desc" data-i18n="why_3_desc">Repas complet dès 35 MAD</div>
+          </div>
+          <div class="why-card">
+            <svg class="why-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            <div class="why-title" data-i18n="why_4_title">Fait avec Passion</div>
+            <div class="why-desc" data-i18n="why_4_desc">Chaque plat préparé avec amour</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-map">
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106376.64785834682!2d-7.6889747168261815!3d33.57311660786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sCasablanca%2C%20Maroc!5e0!3m2!1sfr!2sma!4v1700000000000" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="Localisation Snack El Idrissi"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <div class="section-header">
+    <div class="section-ornament">
+      <svg width="40" height="20" viewBox="0 0 40 20" fill="none">
+        <line x1="0" y1="10" x2="14" y2="10" stroke="#C9A84C" stroke-width="1"/>
+        <circle cx="20" cy="10" r="4" stroke="#C9A84C" stroke-width="1" fill="rgba(201,168,76,0.1)"/>
+        <line x1="26" y1="10" x2="40" y2="10" stroke="#C9A84C" stroke-width="1"/>
+      </svg>
+    </div>
+    <h2 class="section-title" data-i18n="section_gallery">Notre Galerie</h2>
+  </div>
+  <div class="gallery-grid" id="gallery-grid"></div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="testimonials-wrap">
+    <div class="section-header">
+      <div class="section-ornament">
+        <svg width="40" height="20" viewBox="0 0 40 20" fill="none">
+          <line x1="0" y1="10" x2="14" y2="10" stroke="#C9A84C" stroke-width="1"/>
+          <circle cx="20" cy="10" r="4" stroke="#C9A84C" stroke-width="1" fill="rgba(201,168,76,0.1)"/>
+          <line x1="26" y1="10" x2="40" y2="10" stroke="#C9A84C" stroke-width="1"/>
+        </svg>
+      </div>
+      <h2 class="section-title" data-i18n="section_reviews">Ce que disent nos clients</h2>
+    </div>
+    <div class="testimonial-carousel" id="testimonial-carousel">
+      <div class="testimonial-track" id="testimonial-track"></div>
+    </div>
+    <div class="carousel-nav">
+      <button class="carousel-btn" onclick="moveCarousel(-1)" aria-label="Précédent">‹</button>
+      <div class="carousel-dots" id="carousel-dots"></div>
+      <button class="carousel-btn" onclick="moveCarousel(1)" aria-label="Suivant">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- INFO BAND -->
+<div id="info-band">
+  <div class="info-band-wrap">
+    <div class="info-col">
+      <h3>
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span data-i18n="hours_title">Horaires</span>
+      </h3>
+      <div class="info-row"><span class="day">Lundi – Vendredi</span><span class="hours">11h00 – 23h00</span></div>
+      <div class="info-row"><span class="day">Samedi</span><span class="hours">10h00 – 23h30</span></div>
+      <div class="info-row"><span class="day">Dimanche</span><span class="hours">10h00 – 22h30</span></div>
+    </div>
+    <div class="info-col">
+      <h3>
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span data-i18n="location_title">Localisation</span>
+      </h3>
+      <p style="color:var(--cream-soft);font-size:14px;line-height:1.6;margin-bottom:12px">GCPC+CG4, Casablanca, Maroc</p>
+      <a href="https://maps.google.com/?q=Casablanca+Maroc" target="_blank" style="color:var(--gold);font-size:13px;text-decoration:none">Voir sur Google Maps →</a>
+      <div class="info-badges">
+        <span class="info-badge">
+          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          <span data-i18n="dine_in">Sur place</span>
+        </span>
+        <span class="info-badge">
+          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          <span data-i18n="takeaway">À emporter</span>
+        </span>
+        <span class="info-badge">
+          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          Livraison
+        </span>
+      </div>
+    </div>
+    <div class="info-col">
+      <h3>
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 15a19.79 19.79 0 01-3.07-8.67A2 2 0 013.6 4.27h3.01a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 11a16 16 0 006.09 6.09l.95-.95a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 18.4v2.52"/></svg>
+        <span data-i18n="contact_title">Contact</span>
+      </h3>
+      <a href="tel:+212688728284" class="contact-item">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 15"/></svg>
+        06 88 72 82 84
+      </a>
+      <a href="https://wa.me/212688728284" target="_blank" class="contact-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.557 4.116 1.526 5.847L.066 23.453a.5.5 0 00.621.617l5.738-1.449A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.694-.499-5.246-1.369l-.333-.192-3.566.9.929-3.478-.209-.347A9.975 9.975 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+        WhatsApp
+      </a>
+      <div class="social-row">
+        <a href="#" class="social-btn" aria-label="Instagram">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="Facebook">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="https://maps.google.com/?q=Snack+El+Idrissi+Casablanca" target="_blank" class="social-btn" aria-label="Google Maps">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Snack El Idrissi</div>
+  <div class="footer-tagline" data-i18n="footer_tagline">Saveurs d'ici, passion d'ailleurs</div>
+  <div class="footer-links">
+    <a href="#hero" data-i18n="nav_home">Accueil</a>
+    <a href="#menu" data-i18n="nav_menu">Menu</a>
+    <a href="#about" data-i18n="nav_about">À propos</a>
+    <a href="#gallery" data-i18n="nav_gallery">Galerie</a>
+    <a href="#info-band" data-i18n="nav_contact">Contact</a>
+  </div>
+  <div class="footer-divider"></div>
+  <div class="footer-copy" data-i18n="footer_rights">© 2025 Snack El Idrissi · Casablanca</div>
+</footer>
+
+<!-- CART SIDEBAR -->
+<div id="cart-overlay" onclick="closeCart()" role="presentation"></div>
+<div id="cart-sidebar" role="dialog" aria-modal="true" aria-label="Panier">
+  <div class="cart-header">
+    <div class="cart-header-title">
+      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      <span data-i18n="cart_title">Mon Panier</span> <span id="cart-count-label"></span>
+    </div>
+    <button class="cart-close" onclick="closeCart()" aria-label="Fermer le panier">
+      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="promo-section" id="promo-section" style="display:none">
+    <div class="promo-input-wrap">
+      <input type="text" class="promo-input" id="promo-input" data-i18n-placeholder="promo_placeholder" placeholder="Code promo">
+      <button class="promo-apply" data-i18n="promo_apply">Appliquer</button>
+    </div>
+  </div>
+  <div class="cart-form" id="cart-form" style="display:none">
+    <div class="form-field">
+      <label class="form-label" for="customer-name" data-i18n="label_name">Nom complet</label>
+      <input type="text" id="customer-name" class="form-input" data-i18n-placeholder="placeholder_name" placeholder="Votre nom complet">
+      <div class="field-error" id="err-name"></div>
+    </div>
+    <div class="form-field">
+      <label class="form-label" for="customer-phone" data-i18n="label_phone">Téléphone</label>
+      <input type="tel" id="customer-phone" class="form-input" data-i18n-placeholder="placeholder_phone" placeholder="06 XX XX XX XX">
+      <div class="field-error" id="err-phone"></div>
+    </div>
+    <div class="form-field">
+      <label class="form-label" for="customer-address" data-i18n="label_address">Adresse (optionnel)</label>
+      <input type="text" id="customer-address" class="form-input" data-i18n-placeholder="placeholder_address" placeholder="Votre adresse de livraison">
+    </div>
+    <div class="form-field">
+      <label class="form-label" for="order-notes" data-i18n="label_notes">Notes</label>
+      <textarea id="order-notes" class="form-input" rows="2" data-i18n-placeholder="placeholder_notes" placeholder="Allergies, cuisson..."></textarea>
+    </div>
+  </div>
+  <div class="cart-summary" id="cart-summary" style="display:none">
+    <div class="summary-row"><span data-i18n="cart_subtotal">Sous-total</span><span class="amount" id="summary-subtotal">0 MAD</span></div>
+    <div class="summary-row"><span data-i18n="cart_delivery">Livraison</span><span class="amount">0 MAD</span></div>
+    <div class="summary-row total"><span data-i18n="cart_total">Total</span><span class="amount" id="summary-total">0 MAD</span></div>
+  </div>
+  <div class="cart-actions">
+    <button class="btn-whatsapp" onclick="sendWhatsAppOrder()" id="btn-whatsapp-order" style="display:none">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.557 4.116 1.526 5.847L.066 23.453a.5.5 0 00.621.617l5.738-1.449A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.694-.499-5.246-1.369l-.333-.192-3.566.9.929-3.478-.209-.347A9.975 9.975 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+      <span data-i18n="btn_whatsapp">Commander sur WhatsApp</span>
+    </button>
+    <button class="btn-clear" onclick="clearCart()" id="btn-clear-cart" style="display:none" data-i18n="btn_clear_cart">Vider le panier</button>
+    <button class="btn-primary" onclick="closeCart();document.getElementById('menu').scrollIntoView({behavior:'smooth'})" id="btn-view-menu-cart" data-i18n="btn_view_menu" style="width:100%;justify-content:center">Voir le Menu</button>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Galerie photo">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Fermer">✕</button>
+  <button class="lightbox-prev" onclick="lightboxNav(-1)" aria-label="Précédent">‹</button>
+  <img id="lightbox-img" src="" alt="">
+  <button class="lightbox-next" onclick="lightboxNav(1)" aria-label="Suivant">›</button>
+</div>
+
+<!-- FLOATING BUTTONS -->
+<a id="whatsapp-float" href="https://wa.me/212688728284" target="_blank" aria-label="Commander sur WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.557 4.116 1.526 5.847L.066 23.453a.5.5 0 00.621.617l5.738-1.449A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.694-.499-5.246-1.369l-.333-.192-3.566.9.929-3.478-.209-.347A9.975 9.975 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+</a>
+
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Retour en haut">
+  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<div id="mobile-order-bar" onclick="openCart()">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.557 4.116 1.526 5.847L.066 23.453a.5.5 0 00.621.617l5.738-1.449A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.694-.499-5.246-1.369l-.333-.192-3.566.9.929-3.478-.209-.347A9.975 9.975 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+  <span data-i18n="btn_whatsapp">Commander sur WhatsApp</span>
+</div>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner">
+  <span class="cookie-text" data-i18n="cookie_text">Nous utilisons des cookies pour améliorer votre expérience.</span>
+  <div class="cookie-btns">
+    <button class="cookie-accept" onclick="acceptCookie()" data-i18n="cookie_accept">Accepter</button>
+    <button class="cookie-decline" onclick="declineCookie()" data-i18n="cookie_decline">Refuser</button>
+  </div>
+</div>
+
+<!-- TOAST CONTAINER -->
+<div id="toast-container"></div>
+
+<script>
+// ==================== STATE ====================
+let cart = [];
+let currentLang = 'fr';
+let activeCategory = 'all';
+let searchQuery = '';
+let carouselIndex = 0;
+let carouselInterval = null;
+let lightboxIndex = 0;
+let searchDebounceTimer = null;
+
+try {
+  cart = JSON.parse(localStorage.getItem('cart')) || [];
+  currentLang = localStorage.getItem('lang') || 'fr';
+} catch(e) { cart = []; currentLang = 'fr'; }
+
+// ==================== TRANSLATIONS ====================
+const translations = {
+  fr: {
+    nav_home:'Accueil',nav_menu:'Menu',nav_about:'À propos',nav_gallery:'Galerie',nav_contact:'Contact',
+    hero_pretitle:'Restaurant Marocain · Casablanca',hero_subtitle_1:'Saveurs authentiques depuis 2010',
+    open_until:'Ouvert · Jusqu\'à 23h00',cta_menu:'Voir le Menu',cta_order:'Commander',
+    stat_reviews:'Avis clients',stat_rating:'Note Google',stat_price:'Prix moyen MAD',stat_since:'Fondé en',
+    section_menu:'Notre Menu',search_placeholder:'Rechercher un plat...',
+    cat_all:'Tout',cat_grillades:'Grillades',cat_sandwichs:'Sandwichs',
+    cat_accompagnements:'Accompagnements',cat_salades:'Salades',cat_boissons:'Boissons',cat_desserts:'Desserts',
+    badge_popular:'Populaire',badge_new:'Nouveau',badge_veg:'Végétarien',badge_special:'Plat du jour',
+    btn_add:'Ajouter',no_results:'Aucun résultat pour cette recherche',no_results_sub:'Essayez un autre terme',
+    cart_title:'Mon Panier',cart_empty:'Votre panier est vide',cart_empty_sub:'Ajoutez des plats délicieux !',
+    cart_subtotal:'Sous-total',cart_delivery:'Livraison',cart_total:'Total',
+    promo_placeholder:'Code promo',promo_apply:'Appliquer',
+    label_name:'Nom complet',label_phone:'Téléphone',label_address:'Adresse (optionnel)',label_notes:'Notes / Demandes',
+    placeholder_name:'Votre nom complet',placeholder_phone:'06 XX XX XX XX',
+    placeholder_address:'Votre adresse de livraison',placeholder_notes:'Allergies, cuisson, sans sel...',
+    btn_whatsapp:'Commander sur WhatsApp',btn_clear_cart:'Vider le panier',btn_view_menu:'Voir le Menu',
+    error_name:'Le nom est requis',error_phone:'Téléphone invalide (format: 06/07 XX XX XX XX)',
+    error_empty_cart:'Votre panier est vide',toast_added:'ajouté au panier !',toast_removed:'retiré du panier',
+    toast_cleared:'Panier vidé',section_about:'Notre Histoire',
+    about_p1:'Depuis 2010, Snack El Idrissi est une institution gastronomique à Casablanca, fondé avec la passion de partager la cuisine marocaine authentique.',
+    why_title:'Pourquoi nous choisir ?',why_1_title:'Cuisine Authentique',why_1_desc:'Recettes transmises de génération en génération',
+    why_2_title:'Service Express',why_2_desc:'Commande prête en 10-15 minutes',
+    why_3_title:'Prix Abordables',why_3_desc:'Repas complet dès 35 MAD',
+    why_4_title:'Fait avec Passion',why_4_desc:'Chaque plat préparé avec amour',
+    section_gallery:'Notre Galerie',section_reviews:'Ce que disent nos clients',
+    hours_title:'Horaires',location_title:'Localisation',contact_title:'Contact',
+    dine_in:'Sur place',takeaway:'À emporter',
+    footer_tagline:'Saveurs d\'ici, passion d\'ailleurs',footer_rights:'© 2025 Snack El Idrissi · Casablanca',
+    cookie_text:'Nous utilisons des cookies pour améliorer votre expérience.',
+    cookie_accept:'Accepter',cookie_decline:'Refuser',
+    back_to_top:'Haut de page',mad:'MAD',loading:'Chargement...'
+  },
+  en: {
+    nav_home:'Home',nav_menu:'Menu',nav_about:'About',nav_gallery:'Gallery',nav_contact:'Contact',
+    hero_pretitle:'Moroccan Restaurant · Casablanca',hero_subtitle_1:'Authentic flavors since 2010',
+    open_until:'Open · Until 11:00 PM',cta_menu:'View Menu',cta_order:'Order Now',
+    stat_reviews:'Customer reviews',stat_rating:'Google rating',stat_price:'Avg price MAD',stat_since:'Founded in',
+    section_menu:'Our Menu',search_placeholder:'Search for a dish...',
+    cat_all:'All',cat_grillades:'Grills',cat_sandwichs:'Sandwiches',
+    cat_accompagnements:'Sides',cat_salades:'Salads',cat_boissons:'Drinks',cat_desserts:'Desserts',
+    badge_popular:'Popular',badge_new:'New',badge_veg:'Vegetarian',badge_special:'Daily Special',
+    btn_add:'Add',no_results:'No results found',no_results_sub:'Try a different search term',
+    cart_title:'My Cart',cart_empty:'Your cart is empty',cart_empty_sub:'Add some delicious dishes!',
+    cart_subtotal:'Subtotal',cart_delivery:'Delivery',cart_total:'Total',
+    promo_placeholder:'Promo code',promo_apply:'Apply',
+    label_name:'Full name',label_phone:'Phone number',label_address:'Address (optional)',label_notes:'Notes / Special requests',
+    placeholder_name:'Your full name',placeholder_phone:'06 XX XX XX XX',
+    placeholder_address:'Your delivery address',placeholder_notes:'Allergies, cooking preference, no salt...',
+    btn_whatsapp:'Order on WhatsApp',btn_clear_cart:'Clear cart',btn_view_menu:'View Menu',
+    error_name:'Name is required',error_phone:'Invalid phone (format: 06/07 XX XX XX XX)',
+    error_empty_cart:'Your cart is empty',toast_added:'added to cart!',toast_removed:'removed from cart',
+    toast_cleared:'Cart cleared',section_about:'Our Story',
+    about_p1:'Since 2010, Snack El Idrissi has been a gastronomic institution in Casablanca, founded with a passion for sharing authentic Moroccan cuisine.',
+    why_title:'Why choose us?',why_1_title:'Authentic Cuisine',why_1_desc:'Recipes passed down through generations',
+    why_2_title:'Express Service',why_2_desc:'Order ready in 10-15 minutes',
+    why_3_title:'Affordable Prices',why_3_desc:'Full meal from 35 MAD',
+    why_4_title:'Made with Passion',why_4_desc:'Every dish prepared with love',
+    section_gallery:'Our Gallery',section_reviews:'What our customers say',
+    hours_title:'Hours',location_title:'Location',contact_title:'Contact',
+    dine_in:'Dine-in',takeaway:'Takeaway',
+    footer_tagline:'Local flavors, endless passion',footer_rights:'© 2025 Snack El Idrissi · Casablanca',
+    cookie_text:'We use cookies to improve your experience.',cookie_accept:'Accept',cookie_decline:'Decline',
+    back_to_top:'Back to top',mad:'MAD',loading:'Loading...'
+  },
+  ar: {
+    nav_home:'الرئيسية',nav_menu:'القائمة',nav_about:'من نحن',nav_gallery:'المعرض',nav_contact:'اتصل بنا',
+    hero_pretitle:'مطعم مغربي · الدار البيضاء',hero_subtitle_1:'نكهات أصيلة منذ 2010',
+    open_until:'مفتوح · حتى 11:00 مساءً',cta_menu:'عرض القائمة',cta_order:'اطلب الآن',
+    stat_reviews:'تقييمات',stat_rating:'تقييم جوجل',stat_price:'متوسط السعر',stat_since:'منذ',
+    section_menu:'قائمتنا',search_placeholder:'ابحث عن طبق...',
+    cat_all:'الكل',cat_grillades:'مشاوي',cat_sandwichs:'ساندويشات',
+    cat_accompagnements:'مرافقات',cat_salades:'سلطات',cat_boissons:'مشروبات',cat_desserts:'حلويات',
+    badge_popular:'مشهور',badge_new:'جديد',badge_veg:'نباتي',badge_special:'طبق اليوم',
+    btn_add:'أضف',no_results:'لا توجد نتائج',no_results_sub:'جرب مصطلح بحث آخر',
+    cart_title:'سلة التسوق',cart_empty:'سلتك فارغة',cart_empty_sub:'أضف بعض الأطباق اللذيذة!',
+    cart_subtotal:'المجموع الفرعي',cart_delivery:'التوصيل',cart_total:'المجموع',
+    promo_placeholder:'رمز الخصم',promo_apply:'تطبيق',
+    label_name:'الاسم الكامل',label_phone:'رقم الهاتف',label_address:'العنوان (اختياري)',label_notes:'ملاحظات / طلبات خاصة',
+    placeholder_name:'اسمك الكامل',placeholder_phone:'06 XX XX XX XX',
+    placeholder_address:'عنوان التوصيل',placeholder_notes:'حساسيات، طريقة الطهي، بدون ملح...',
+    btn_whatsapp:'اطلب عبر واتساب',btn_clear_cart:'إفراغ السلة',btn_view_menu:'عرض القائمة',
+    error_name:'الاسم مطلوب',error_phone:'رقم هاتف غير صالح (صيغة: 06/07 XX XX XX XX)',
+    error_empty_cart:'سلتك فارغة',toast_added:'أُضيف إلى السلة!',toast_removed:'أُزيل من السلة',
+    toast_cleared:'تم إفراغ السلة',section_about:'قصتنا',
+    about_p1:'منذ 2010، يُعدّ سناك الإدريسي مؤسسة غذائية في الدار البيضاء، تأسس بشغف مشاركة المطبخ المغربي الأصيل.',
+    why_title:'لماذا تختارنا؟',why_1_title:'مطبخ أصيل',why_1_desc:'وصفات متوارثة عبر الأجيال',
+    why_2_title:'خدمة سريعة',why_2_desc:'طلبك جاهز في 10-15 دقيقة',
+    why_3_title:'أسعار معقولة',why_3_desc:'وجبة كاملة من 35 درهم',
+    why_4_title:'مصنوع بشغف',why_4_desc:'كل طبق يُعدّ بحب',
+    section_gallery:'معرض الصور',section_reviews:'ماذا يقول عملاؤنا',
+    hours_title:'أوقات العمل',location_title:'الموقع',contact_title:'اتصل بنا',
+    dine_in:'بالمطعم',takeaway:'للحمل',
+    footer_tagline:'نكهات محلية، شغف لا ينتهي',footer_rights:'© 2025 سناك الإدريسي · الدار البيضاء',
+    cookie_text:'نستخدم الكوكيز لتحسين تجربتك.',cookie_accept:'قبول',cookie_decline:'رفض',
+    back_to_top:'للأعلى',mad:'درهم',loading:'جارٍ التحميل...'
+  }
+};
+
+function t(key) { return (translations[currentLang] && translations[currentLang][key]) || key; }
+
+// ==================== MENU DATA ====================
+const menuItems = [
+  {id:1,category:'grillades',name:{fr:'Kefta Brochette',en:'Kefta Skewer',ar:'كفتة مشوية'},desc:{fr:'Viande hachée épicée grillée au charbon de bois',en:'Spiced minced meat grilled over charcoal',ar:'لحم مفروم متبّل مشوي على الفحم'},price:45,spice:2,popular:true,isNew:false,isSpecial:false,image:'https://images.unsplash.com/photo-1544025162-d76694265947?w=500&q=80'},
+  {id:2,category:'grillades',name:{fr:'Brochette de Poulet',en:'Chicken Skewer',ar:'برشيطة دجاج'},desc:{fr:'Tendres morceaux de poulet marinés aux épices marocaines',en:'Tender chicken pieces marinated in Moroccan spices',ar:'قطع دجاج طرية متبّلة بالتوابل المغربية'},price:40,spice:1,popular:false,isNew:false,image:'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=500&q=80'},
+  {id:3,category:'grillades',name:{fr:'Merguez Grillées',en:'Grilled Merguez',ar:'مرقاز مشوي'},desc:{fr:'Saucisses épicées grillées, servies avec harissa maison',en:'Spiced grilled sausages served with homemade harissa',ar:'نقانق حارة مشوية مع هريسة منزلية'},price:35,spice:3,popular:true,isNew:false,isSpecial:true,image:'https://images.unsplash.com/photo-1558030137-a56c1b004fa3?w=500&q=80'},
+  {id:4,category:'grillades',name:{fr:'Côtelettes d\'Agneau',en:'Lamb Chops',ar:'ضلوع خروف'},desc:{fr:'Côtelettes d\'agneau grillées aux herbes et citron confit',en:'Grilled lamb chops with herbs and preserved lemon',ar:'ضلوع خروف مشوية بالأعشاب والليمون المصبّر'},price:85,spice:1,popular:true,isNew:false,image:'https://images.unsplash.com/photo-1547592180-85f173990554?w=500&q=80'},
+  {id:5,category:'grillades',name:{fr:'Assiette Mixte Grillades',en:'Mixed Grill Plate',ar:'طبق مشاوي مشكّل'},desc:{fr:'Assortiment kefta, merguez, brochette poulet — pour 2 personnes',en:'Kefta, merguez, chicken skewer assortment — for 2',ar:'تشكيلة كفتة ومرقاز وبرشيطة دجاج — لشخصين'},price:95,spice:2,popular:true,isNew:true,isSpecial:true,image:'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&q=80'},
+  {id:6,category:'sandwichs',name:{fr:'Panini Kefta',en:'Kefta Panini',ar:'بانيني كفتة'},desc:{fr:'Pain ciabatta grillé, kefta maison, fromage fondu, tomate',en:'Grilled ciabatta, homemade kefta, melted cheese, tomato',ar:'خبز محمص بالكفتة والجبن الذائب والطماطم'},price:35,spice:1,popular:true,isNew:false,image:'https://images.unsplash.com/photo-1509722747041-616f39b57569?w=500&q=80'},
+  {id:7,category:'sandwichs',name:{fr:'Sandwich Merguez',en:'Merguez Sandwich',ar:'ساندويش مرقاز'},desc:{fr:'Baguette croustillante, merguez grillées, frites, harissa',en:'Crusty baguette, grilled merguez, fries, harissa',ar:'باغيت هش مع مرقاز مشوي وبطاطا وهريسة'},price:28,spice:2,popular:false,isNew:false,image:'https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=500&q=80'},
+  {id:8,category:'sandwichs',name:{fr:'Club Poulet Grillé',en:'Grilled Chicken Club',ar:'كلوب دجاج مشوي'},desc:{fr:'Pain de mie grillé, poulet, salade, mayo citron, cornichons',en:'Toasted bread, chicken, lettuce, lemon mayo, pickles',ar:'خبز محمص مع دجاج وخس ومايونيز ليمون ومخلل'},price:38,spice:0,popular:false,isNew:true,image:'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500&q=80'},
+  {id:9,category:'accompagnements',name:{fr:'Frites Maison',en:'Homemade Fries',ar:'بطاطا مقلية منزلية'},desc:{fr:'Pommes de terre fraîches taillées main, croustillantes',en:'Fresh hand-cut potatoes, extra crispy',ar:'بطاطا طازجة مقطعة يدوياً ومقرمشة'},price:20,spice:0,popular:false,isNew:false,isVeg:true,image:'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&q=80'},
+  {id:10,category:'accompagnements',name:{fr:'Frites Épicées',en:'Spicy Fries',ar:'بطاطا حارة'},desc:{fr:'Frites assaisonnées cumin, paprika, piment doux',en:'Fries seasoned with cumin, paprika, sweet pepper',ar:'بطاطا متبّلة بالكمون والبابريكا والفلفل الحلو'},price:25,spice:2,popular:true,isNew:false,isVeg:true,image:'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=500&q=80'},
+  {id:11,category:'accompagnements',name:{fr:'Khobz + Huile d\'Olive',en:'Moroccan Bread + Olive Oil',ar:'خبز مغربي + زيت الزيتون'},desc:{fr:'Pain plat artisanal cuit au four, huile d\'olive argan',en:'Artisan flatbread with argan olive oil',ar:'خبز مسطح حرفي مع زيت أركان'},price:15,spice:0,popular:false,isNew:false,isVeg:true,image:'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=500&q=80'},
+  {id:12,category:'salades',name:{fr:'Salade Marocaine Classique',en:'Classic Moroccan Salad',ar:'سلطة مغربية كلاسيكية'},desc:{fr:'Tomate, poivron, concombre, oignon, coriandre, citron',en:'Tomato, pepper, cucumber, onion, coriander, lemon',ar:'طماطم وفليفلة وخيار وبصل وكزبرة وليمون'},price:22,spice:0,popular:false,isNew:false,isVeg:true,image:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80'},
+  {id:13,category:'salades',name:{fr:'Zaalouk Aubergine',en:'Aubergine Zaalouk',ar:'زعلوك الباذنجان'},desc:{fr:'Purée d\'aubergines grillées aux tomates, ail, cumin',en:'Grilled eggplant purée with tomatoes, garlic, cumin',ar:'هريس الباذنجان المشوي مع الطماطم والثوم والكمون'},price:25,spice:1,popular:true,isNew:false,isVeg:true,image:'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80'},
+  {id:14,category:'salades',name:{fr:'Taktouka Poivrons',en:'Pepper Taktouka',ar:'تكتوكة الفلفل'},desc:{fr:'Poivrons et tomates rôtis à l\'huile d\'olive, ail, épices',en:'Roasted peppers and tomatoes with olive oil, garlic',ar:'فلفل وطماطم مشوية بزيت الزيتون والثوم والتوابل'},price:22,spice:1,popular:false,isNew:false,isVeg:true,image:'https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500&q=80'},
+  {id:15,category:'boissons',name:{fr:'Thé à la Menthe',en:'Mint Tea',ar:'أتاي بالنعناع'},desc:{fr:'Thé vert gunpowder, menthe fraîche, sucre — servi en théière',en:'Gunpowder green tea, fresh mint, sugar — teapot',ar:'شاي أخضر بالنعناع الطازج والسكر في إبريق'},price:15,spice:0,popular:true,isNew:false,isVeg:true,image:'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=500&q=80'},
+  {id:16,category:'boissons',name:{fr:'Jus d\'Orange Frais',en:'Fresh Orange Juice',ar:'عصير برتقال طازج'},desc:{fr:'Oranges de Marrakech pressées minute, sans sucre ajouté',en:'Freshly squeezed Marrakech oranges, no added sugar',ar:'برتقال مراكش معصور لحظياً بدون سكر مضاف'},price:20,spice:0,popular:true,isNew:false,isVeg:true,image:'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=500&q=80'},
+  {id:17,category:'boissons',name:{fr:'Limonade Menthe Citron',en:'Mint Lemon Soda',ar:'ليموناضة نعناع وليمون'},desc:{fr:'Citron frais, menthe, eau gazeuse, sirop maison',en:'Fresh lemon, mint, sparkling water, homemade syrup',ar:'ليمون طازج ونعناع ومياه فوارة وشراب منزلي'},price:22,spice:0,popular:false,isNew:true,isVeg:true,image:'https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=500&q=80'},
+  {id:18,category:'boissons',name:{fr:'Café Marocain (Nous-Nous)',en:'Moroccan Coffee (Nous-Nous)',ar:'قهوة مغربية نص نص'},desc:{fr:'Moitié expresso, moitié lait chaud, arôme de cannelle',en:'Half espresso, half warm milk, cinnamon aroma',ar:'نصف إسبريسو ونصف حليب ساخن مع عطر القرفة'},price:18,spice:0,popular:false,isNew:false,isVeg:true,image:'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&q=80'},
+  {id:19,category:'desserts',name:{fr:'Chebakia au Miel',en:'Honey Chebakia',ar:'شباكية بالعسل'},desc:{fr:'Pâtisserie marocaine au sésame, frite, enrobée de miel',en:'Moroccan pastry with sesame, fried, coated in honey',ar:'حلوى مغربية بالسمسم مقلية ومغطاة بالعسل'},price:20,spice:0,popular:true,isNew:false,isVeg:true,image:'https://images.unsplash.com/photo-1551024601-bec78aea704b?w=500&q=80'},
+  {id:20,category:'desserts',name:{fr:'Cornes de Gazelle',en:'Gazelle Horns',ar:'كعب الغزال'},desc:{fr:'Croissants délicats à la pâte d\'amande et fleur d\'oranger',en:'Delicate almond paste crescents with orange blossom',ar:'هلالات رقيقة بالمارزيبان وماء الزهر'},price:25,spice:0,popular:false,isNew:false,isVeg:true,image:'https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=500&q=80'},
+  {id:21,category:'desserts',name:{fr:'M\'hanncha (Serpent Amande)',en:'Almond Snake Pastry',ar:'مهنشة اللوز'},desc:{fr:'Feuille de brick roulée, farcie pâte d\'amande, cannelle',en:'Rolled brick pastry filled with almond paste and cinnamon',ar:'ورقة بريك ملفوفة محشوة بمعجون اللوز والقرفة'},price:30,spice:0,popular:true,isNew:true,isVeg:true,image:'https://images.unsplash.com/photo-1579697096985-41fe1430e5df?w=500&q=80'}
+];
+
+const categories = ['all','grillades','sandwichs','accompagnements','salades','boissons','desserts'];
+
+// ==================== GALLERY DATA ====================
+const galleryImages = [
+  {url:'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80',alt:'Grillades marocaines'},
+  {url:'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80',alt:'Brochettes kefta'},
+  {url:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80',alt:'Salade fraîche'},
+  {url:'https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80',alt:'Desserts marocains'},
+  {url:'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80',alt:'Thé à la menthe'},
+  {url:'https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=600&q=80',alt:'Pâtisseries marocaines'},
+  {url:'https://images.unsplash.com/photo-1558030137-a56c1b004fa3?w=600&q=80',alt:'Merguez grillées'},
+  {url:'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=600&q=80',alt:'Poulet mariné'},
+  {url:'https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80',alt:'Côtelettes d\'agneau'}
+];
+
+// ==================== TESTIMONIALS ====================
+const testimonials = [
+  {name:'Fatima Zahra B.',flag:'🇲🇦',stars:5,date:'Mars 2025',text:{fr:"Les meilleures brochettes de Casablanca ! Service rapide et personnel très accueillant.",en:"The best skewers in Casablanca! Fast service and very welcoming staff.",ar:"أفضل مشاوي في الدار البيضاء! خدمة سريعة وموظفون في غاية الترحيب."}},
+  {name:'Youssef M.',flag:'🇲🇦',stars:5,date:'Février 2025',text:{fr:"Rapport qualité-prix imbattable. Le thé à la menthe est exceptionnel !",en:"Unbeatable value for money. The mint tea is exceptional!",ar:"قيمة مال لا تُنافَس. الأتاي بالنعناع استثنائي!"}},
+  {name:'Marie L.',flag:'🇫🇷',stars:4,date:'Janvier 2025',text:{fr:"Découvert en voyage à Casa. Cuisine authentique, je reviendrai à chaque visite !",en:"Discovered on a trip to Casa. Authentic cuisine, I'll return every visit!",ar:"اكتشفته في رحلة إلى الدار البيضاء. مطبخ أصيل، سأعود في كل زيارة!"}},
+  {name:'Ahmed K.',flag:'🇲🇦',stars:5,date:'Décembre 2024',text:{fr:"Le plat du jour est toujours une surprise agréable. Merci l'équipe !",en:"The daily special is always a pleasant surprise. Thanks team!",ar:"طبق اليوم دائماً مفاجأة لطيفة. شكراً للفريق!"}},
+  {name:'Sarah T.',flag:'🇬🇧',stars:5,date:'Novembre 2024',text:{fr:"Absolument divin ! La kefta et le zaalouk sont incontournables. Joyau caché de Casa.",en:"Absolutely divine! The kefta and zaalouk are must-tries. Hidden gem of Casablanca.",ar:"رائع تماماً! الكفتة والزعلوك لا يُفوَّتان. جوهرة خفية في الدار البيضاء."}}
+];
+
+// ==================== TYPEWRITER ====================
+const typewriterTexts = {
+  fr:'Saveurs authentiques depuis 2010',
+  en:'Authentic Moroccan flavors since 2010',
+  ar:'نكهات مغربية أصيلة منذ 2010'
+};
+let twIndex = 0; let twChar = 0; let twDeleting = false; let twTimer = null; let twLangIndex = 0;
+const twLangs = ['fr','en','ar'];
+function typewriterTick() {
+  const el = document.getElementById('hero-typewriter');
+  if (!el) return;
+  const lang = twLangs[twLangIndex];
+  const text = typewriterTexts[lang];
+  if (!twDeleting) {
+    el.textContent = text.substring(0, twChar + 1);
+    twChar++;
+    if (twChar === text.length) { twDeleting = true; twTimer = setTimeout(typewriterTick, 3000); return; }
+  } else {
+    el.textContent = text.substring(0, twChar - 1);
+    twChar--;
+    if (twChar === 0) { twDeleting = false; twLangIndex = (twLangIndex + 1) % twLangs.length; }
+  }
+  twTimer = setTimeout(typewriterTick, twDeleting ? 40 : 80);
+}
+
+// ==================== LANGUAGE ====================
+function setLanguage(lang) {
+  currentLang = lang;
+  try { localStorage.setItem('lang', lang); } catch(e) {}
+  const html = document.documentElement;
+  const dir = lang === 'ar' ? 'rtl' : 'ltr';
+  html.setAttribute('lang', lang);
+  html.setAttribute('dir', dir);
+  html.className = 'lang-' + lang;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.textContent.includes(lang.toUpperCase())));
+  updateAllTexts();
+}
+
+function updateAllTexts() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const val = t(key);
+    if (val) el.textContent = val;
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    const val = t(key);
+    if (val) el.placeholder = val;
+  });
+  renderMenu();
+  renderTestimonials();
+}
+
+// ==================== MENU RENDER ====================
+function renderMenu() {
+  renderCategoryTabs();
+  renderMenuItems();
+}
+
+function renderCategoryTabs() {
+  const container = document.getElementById('category-tabs');
+  if (!container) return;
+  container.innerHTML = '';
+  categories.forEach(cat => {
+    const count = cat === 'all' ? menuItems.length : menuItems.filter(i => i.category === cat).length;
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn' + (cat === activeCategory ? ' active' : '');
+    btn.setAttribute('data-cat', cat);
+    const icon = {all:'🍽️',grillades:'🥩',sandwichs:'🥪',accompagnements:'🍟',salades:'🥗',boissons:'🧃',desserts:'🍮'}[cat] || '';
+    btn.innerHTML = `${icon} <span>${t('cat_' + cat)}</span> <span class="tab-count">${count}</span>`;
+    btn.onclick = () => { activeCategory = cat; renderMenu(); };
+    container.appendChild(btn);
+  });
+}
+
+function highlightText(text, query) {
+  if (!query) return escHtml(text);
+  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return escHtml(text).replace(new RegExp(escaped, 'gi'), m => `<mark>${m}</mark>`);
+}
+
+function escHtml(str) {
+  const d = document.createElement('div'); d.textContent = str; return d.innerHTML;
+}
+
+function renderMenuItems() {
+  const grid = document.getElementById('menu-grid');
+  const countEl = document.getElementById('results-count');
+  if (!grid) return;
+  
+  let items = menuItems;
+  if (activeCategory !== 'all') items = items.filter(i => i.category === activeCategory);
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    items = items.filter(i => (i.name[currentLang]||'').toLowerCase().includes(q) || (i.desc[currentLang]||'').toLowerCase().includes(q));
+  }
+  
+  if (countEl) {
+    countEl.textContent = searchQuery || activeCategory !== 'all' ? `${items.length} plat${items.length !== 1 ? 's' : ''} trouvé${items.length !== 1 ? 's' : ''}` : '';
+  }
+
+  grid.innerHTML = '';
+  if (items.length === 0) {
+    grid.innerHTML = `<div class="menu-empty">
+      <svg width="80" height="80" fill="none" stroke="#9A8A6A" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 2v1a3 3 0 003 3h1v1a2 2 0 01-2 2H4a1 1 0 000 2h16a1 1 0 000-2h-1a2 2 0 01-2-2V6h1a3 3 0 003-3V2H3zM6 20v1a1 1 0 001 1h10a1 1 0 001-1v-1"/></svg>
+      <h3>${t('no_results')}</h3><p>${t('no_results_sub')}</p>
+    </div>`;
+    return;
+  }
+
+  items.forEach((item, idx) => {
+    const isSpecialWide = item.isSpecial && idx === 0 && activeCategory === 'all';
+    const card = document.createElement('div');
+    card.className = `menu-card${item.isSpecial ? ' special' : ''}${isSpecialWide ? ' special-wide' : ''}`;
+    card.style.cssText = `opacity:0;transform:translateY(16px);transition:opacity 0.4s ${idx*40}ms, transform 0.4s ${idx*40}ms`;
+    
+    const spiceIcons = [1,2,3].map(level => {
+      const active = level <= item.spice;
+      const cls = active ? `active-${Math.min(level, item.spice)}` : 'inactive';
+      return `<svg class="spice-icon ${cls}" viewBox="0 0 24 24" fill="${active ? 'currentColor' : 'var(--bronze-dim)'}" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8 2 6 6 6 9c0 2.5 1 4.5 3 6l1 7h4l1-7c2-1.5 3-3.5 3-6 0-3-2-7-6-7z"/></svg>`;
+    }).join('');
+
+    const badgeHTML = [
+      item.popular ? `<span class="badge badge-popular">${t('badge_popular')}</span>` : '',
+      item.isNew ? `<span class="badge badge-new">${t('badge_new')}</span>` : '',
+      item.isSpecial ? `<span class="badge badge-special">${t('badge_special')}</span>` : '',
+      item.isVeg ? `<span class="badge badge-veg">${t('badge_veg')}</span>` : ''
+    ].filter(Boolean).join('');
+
+    const nameHL = highlightText(item.name[currentLang] || item.name.fr, searchQuery);
+    const descHL = highlightText(item.desc[currentLang] || item.desc.fr, searchQuery);
+    const priceHTML = item.originalPrice
+      ? `<span class="price-original">${item.originalPrice} MAD</span><span class="price-current">${item.price} MAD</span><span class="price-badge">-${Math.round((1 - item.price/item.originalPrice)*100)}%</span>`
+      : `<span class="price-current">${item.price} MAD</span>`;
+
+    card.innerHTML = `
+      ${badgeHTML ? `<div class="card-badges">${badgeHTML}</div>` : ''}
+      <div class="card-img-wrap">
+        <img src="${escHtml(item.image)}" alt="${escHtml(item.name[currentLang] || item.name.fr)}" loading="lazy">
+        <span class="card-cat-badge">${t('cat_' + item.category)}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-name">${nameHL}</div>
+        <div class="card-desc">${descHL}</div>
+        ${item.spice > 0 ? `<div class="spice-level" aria-label="Niveau épicé: ${item.spice}/3">${spiceIcons}</div>` : ''}
+        <div class="card-footer">
+          <div class="card-price">${priceHTML}</div>
+          <div class="card-actions">
+            <div class="qty-controls">
+              <button class="qty-btn" onclick="changeQty(${item.id}, -1)" aria-label="Réduire">−</button>
+              <span class="qty-value" id="qty-${item.id}">1</span>
+              <button class="qty-btn" onclick="changeQty(${item.id}, 1)" aria-label="Augmenter">+</button>
+            </div>
+            <button class="btn-add" id="add-btn-${item.id}" onclick="addToCart(${item.id}, this)" aria-label="Ajouter au panier">${t('btn_add')}</button>
+          </div>
+        </div>
+      </div>`;
+    grid.appendChild(card);
+    requestAnimationFrame(() => { card.style.opacity = '1'; card.style.transform = 'translateY(0)'; });
+  });
+}
+
+function changeQty(id, delta) {
+  const el = document.getElementById('qty-' + id);
+  if (!el) return;
+  let val = parseInt(el.textContent) + delta;
+  if (val < 1) val = 1;
+  el.textContent = val;
+}
+
+function addToCart(id, btn) {
+  const item = menuItems.find(i => i.id === id);
+  if (!item) return;
+  const qty = parseInt(document.getElementById('qty-' + id)?.textContent || 1);
+  const existing = cart.find(i => i.id === id);
+  if (existing) existing.qty += qty;
+  else cart.push({...item, qty});
+  saveCart();
+  updateCartUI();
+  
+  // Ripple
+  if (btn) { btn.classList.add('ripple'); setTimeout(() => btn.classList.remove('ripple'), 500); }
+  
+  // Fly animation
+  const imgEl = btn?.closest('.menu-card')?.querySelector('img');
+  if (imgEl && btn) flyToCart(imgEl, btn);
+  
+  showToast(`${item.name[currentLang] || item.name.fr} ${t('toast_added')}`, 'success');
+}
+
+function flyToCart(imgEl, btn) {
+  const cartBtn = document.querySelector('.cart-btn');
+  if (!cartBtn || !imgEl) return;
+  const src = imgEl.getBoundingClientRect();
+  const dst = cartBtn.getBoundingClientRect();
+  const fly = document.createElement('img');
+  fly.className = 'fly-item';
+  fly.src = imgEl.src;
+  fly.style.cssText = `left:${src.left}px;top:${src.top}px;width:${src.width}px;height:${src.height}px;`;
+  document.body.appendChild(fly);
+  const dx = dst.left - src.left; const dy = dst.top - src.top;
+  fly.animate([
+    {transform:'translate(0,0) scale(1)', opacity:1},
+    {transform:`translate(${dx/2}px,${dy - 60}px) scale(0.6)`, opacity:0.8, offset:0.5},
+    {transform:`translate(${dx}px,${dy}px) scale(0.1)`, opacity:0}
+  ], {duration:700, easing:'cubic-bezier(0.4,0,0.2,1)'}).onfinish = () => {
+    fly.remove();
+    const badge = document.getElementById('cart-badge');
+    badge.classList.add('bounce');
+    setTimeout(() => badge.classList.remove('bounce'), 400);
+  };
+}
+
+function removeFromCart(id) {
+  const item = cart.find(i => i.id === id);
+  if (item) { showToast(`${item.name[currentLang] || item.name.fr} ${t('toast_removed')}`, 'info'); }
+  cart = cart.filter(i => i.id !== id);
+  saveCart(); updateCartUI();
+}
+
+function clearCart() {
+  cart = []; saveCart(); updateCartUI();
+  showToast(t('toast_cleared'), 'info');
+}
+
+function saveCart() {
+  try { localStorage.setItem('cart', JSON.stringify(cart)); } catch(e) {}
+}
+
+function updateCartUI() {
+  const total = cart.reduce((s, i) => s + i.qty, 0);
+  const badge = document.getElementById('cart-badge');
+  if (badge) { badge.textContent = total; badge.classList.toggle('hidden', total === 0); }
+  renderCartItems();
+}
+
+function renderCartItems() {
+  const container = document.getElementById('cart-items');
+  const promoSection = document.getElementById('promo-section');
+  const formSection = document.getElementById('cart-form');
+  const summarySection = document.getElementById('cart-summary');
+  const btnWa = document.getElementById('btn-whatsapp-order');
+  const btnClear = document.getElementById('btn-clear-cart');
+  const btnView = document.getElementById('btn-view-menu-cart');
+  const countLabel = document.getElementById('cart-count-label');
+  if (!container) return;
+
+  const total = cart.reduce((s, i) => s + i.qty, 0);
+  if (countLabel) countLabel.textContent = total > 0 ? `(${total})` : '';
+  
+  if (cart.length === 0) {
+    container.innerHTML = `<div class="cart-empty-state">
+      <svg width="80" height="80" fill="none" stroke="#9A8A6A" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      <h3 data-i18n="cart_empty">${t('cart_empty')}</h3>
+      <p data-i18n="cart_empty_sub">${t('cart_empty_sub')}</p>
+    </div>`;
+    if (promoSection) promoSection.style.display = 'none';
+    if (formSection) formSection.style.display = 'none';
+    if (summarySection) summarySection.style.display = 'none';
+    if (btnWa) btnWa.style.display = 'none';
+    if (btnClear) btnClear.style.display = 'none';
+    if (btnView) btnView.style.display = 'flex';
+    return;
+  }
+  
+  if (promoSection) promoSection.style.display = 'block';
+  if (formSection) formSection.style.display = 'block';
+  if (summarySection) summarySection.style.display = 'block';
+  if (btnWa) btnWa.style.display = 'flex';
+  if (btnClear) btnClear.style.display = 'flex';
+  if (btnView) btnView.style.display = 'none';
+
+  container.innerHTML = '';
+  cart.forEach(item => {
+    const div = document.createElement('div');
+    div.className = 'cart-item';
+    div.innerHTML = `
+      <img class="cart-item-img" src="${escHtml(item.image)}" alt="${escHtml(item.name[currentLang] || item.name.fr)}" loading="lazy">
+      <div class="cart-item-info">
+        <div class="cart-item-name">${escHtml(item.name[currentLang] || item.name.fr)}</div>
+        <div class="cart-item-price">${item.qty * item.price} MAD</div>
+        <div class="cart-item-controls">
+          <div class="qty-controls">
+            <button class="qty-btn" onclick="updateCartQty(${item.id}, -1)" aria-label="Réduire">−</button>
+            <span class="qty-value">${item.qty}</span>
+            <button class="qty-btn" onclick="updateCartQty(${item.id}, 1)" aria-label="Augmenter">+</button>
+          </div>
+        </div>
+      </div>
+      <button class="cart-remove" onclick="removeFromCart(${item.id})" aria-label="Retirer">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg>
+      </button>`;
+    container.appendChild(div);
+  });
+
+  const subtotal = cart.reduce((s, i) => s + i.qty * i.price, 0);
+  const sub = document.getElementById('summary-subtotal');
+  const tot = document.getElementById('summary-total');
+  if (sub) sub.textContent = `${subtotal} MAD`;
+  if (tot) tot.textContent = `${subtotal} MAD`;
+}
+
+function updateCartQty(id, delta) {
+  const item = cart.find(i => i.id === id);
+  if (!item) return;
+  item.qty += delta;
+  if (item.qty <= 0) { cart = cart.filter(i => i.id !== id); }
+  saveCart(); updateCartUI();
+}
+
+function openCart() {
+  document.getElementById('cart-overlay').classList.add('open');
+  document.getElementById('cart-sidebar').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  renderCartItems();
+}
+
+function closeCart() {
+  document.getElementById('cart-overlay').classList.remove('open');
+  document.getElementById('cart-sidebar').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ==================== WHATSAPP ORDER ====================
+function sendWhatsAppOrder() {
+  const name = document.getElementById('customer-name')?.value.trim() || '';
+  const phone = document.getElementById('customer-phone')?.value.trim() || '';
+  const address = document.getElementById('customer-address')?.value.trim() || 'Sur place';
+  const notes = document.getElementById('order-notes')?.value.trim() || 'Aucune';
+
+  clearFieldErrors();
+  let hasError = false;
+  if (!name) { showFieldError('customer-name', 'err-name', t('error_name')); hasError = true; }
+  if (!/^0[67]\d{8}$/.test(phone.replace(/\s/g, ''))) { showFieldError('customer-phone', 'err-phone', t('error_phone')); hasError = true; }
+  if (cart.length === 0) { showToast(t('error_empty_cart'), 'error'); return; }
+  if (hasError) return;
+
+  const itemsText = cart.map(item => `• ${item.name.fr || item.name[currentLang]} x${item.qty} = ${item.qty * item.price} MAD`).join('\n');
+  const total = cart.reduce((sum, item) => sum + item.qty * item.price, 0);
+  const message = `🍽️ *Nouvelle Commande — Snack El Idrissi*\n\n👤 *Nom:* ${name}\n📱 *Téléphone:* ${phone}\n📍 *Adresse:* ${address}\n\n🛒 *Commande:*\n${itemsText}\n────────────────────\n💰 *Total: ${total} MAD*\n\n📝 *Notes:* ${notes}\n\nMerci! ✨`;
+  window.open(`https://wa.me/212688728284?text=${encodeURIComponent(message)}`, '_blank');
+}
+
+function showFieldError(inputId, errId, msg) {
+  const input = document.getElementById(inputId);
+  const err = document.getElementById(errId);
+  if (input) { input.classList.add('error'); setTimeout(() => input.classList.remove('error'), 1000); }
+  if (err) err.textContent = msg;
+}
+
+function clearFieldErrors() {
+  ['err-name','err-phone'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = ''; });
+}
+
+// ==================== TOAST ====================
+function showToast(msg, type = 'success') {
+  const container = document.getElementById('toast-container');
+  if (!container) return;
+  const toast = document.createElement('div');
+  toast.className = `toast ${type}`;
+  const icon = type === 'success' ? '✓' : type === 'error' ? '✕' : 'ℹ';
+  toast.innerHTML = `<span>${icon}</span><span>${escHtml(msg)}</span>`;
+  container.appendChild(toast);
+  setTimeout(() => { toast.classList.add('out'); setTimeout(() => toast.remove(), 300); }, 3000);
+}
+
+// ==================== SEARCH ====================
+function debouncedSearch() {
+  clearTimeout(searchDebounceTimer);
+  searchDebounceTimer = setTimeout(() => {
+    const val = document.getElementById('search-input')?.value.trim() || '';
+    searchQuery = val;
+    const clearBtn = document.getElementById('search-clear');
+    if (clearBtn) clearBtn.hidden = !val;
+    renderMenuItems();
+  }, 200);
+}
+
+function clearSearch() {
+  searchQuery = '';
+  const inp = document.getElementById('search-input');
+  if (inp) inp.value = '';
+  const clearBtn = document.getElementById('search-clear');
+  if (clearBtn) clearBtn.hidden = true;
+  renderMenuItems();
+}
+
+// ==================== GALLERY ====================
+function renderGallery() {
+  const grid = document.getElementById('gallery-grid');
+  if (!grid) return;
+  galleryImages.forEach((img, idx) => {
+    const item = document.createElement('div');
+    item.className = 'gallery-item';
+    item.innerHTML = `
+      <img src="${escHtml(img.url)}" alt="${escHtml(img.alt)}" loading="lazy">
+      <div class="gallery-overlay">
+        <svg width="32" height="32" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      </div>`;
+    item.addEventListener('click', () => openLightbox(idx));
+    grid.appendChild(item);
+  });
+}
+
+function openLightbox(idx) {
+  lightboxIndex = idx;
+  const lb = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  if (!lb || !img) return;
+  img.src = galleryImages[idx].url;
+  img.alt = galleryImages[idx].alt;
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox')?.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function lightboxNav(dir) {
+  lightboxIndex = (lightboxIndex + dir + galleryImages.length) % galleryImages.length;
+  const img = document.getElementById('lightbox-img');
+  if (img) { img.src = galleryImages[lightboxIndex].url; img.alt = galleryImages[lightboxIndex].alt; }
+}
+
+// Touch swipe for lightbox
+let lbTouchStartX = 0;
+document.getElementById('lightbox')?.addEventListener('touchstart', e => { lbTouchStartX = e.touches[0].clientX; }, {passive:true});
+document.getElementById('lightbox')?.addEventListener('touchend', e => {
+  const delta = lbTouchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(delta) > 60) lightboxNav(delta > 0 ? 1 : -1);
+});
+
+// ==================== TESTIMONIALS ====================
+function renderTestimonials() {
+  const track = document.getElementById('testimonial-track');
+  const dots = document.getElementById('carousel-dots');
+  if (!track) return;
+  
+  track.innerHTML = '';
+  testimonials.forEach((t_item, idx) => {
+    const stars = '★'.repeat(t_item.stars) + '☆'.repeat(5 - t_item.stars);
+    const slide = document.createElement('div');
+    slide.className = 'testimonial-slide';
+    slide.innerHTML = `<div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <div class="testimonial-stars">${stars}</div>
+      <div class="testimonial-text">${escHtml(t_item.text[currentLang] || t_item.text.fr)}</div>
+      <div class="testimonial-author">
+        <div class="author-avatar">${t_item.name.charAt(0)}</div>
+        <div>
+          <div class="author-name">${escHtml(t_item.name)} ${t_item.flag}</div>
+          <div class="author-meta">${escHtml(t_item.date)}</div>
+        </div>
+      </div>
+    </div>`;
+    track.appendChild(slide);
+  });
+  
+  if (dots) {
+    dots.innerHTML = '';
+    testimonials.forEach((_, idx) => {
+      const dot = document.createElement('button');
+      dot.className = 'carousel-dot' + (idx === carouselIndex ? ' active' : '');
+      dot.setAttribute('aria-label', `Avis ${idx+1}`);
+      dot.onclick = () => { carouselIndex = idx; moveToSlide(); };
+      dots.appendChild(dot);
+    });
+  }
+  moveToSlide();
+}
+
+function moveCarousel(dir) {
+  carouselIndex = (carouselIndex + dir + testimonials.length) % testimonials.length;
+  moveToSlide();
+  resetCarouselInterval();
+}
+
+function moveToSlide() {
+  const track = document.getElementById('testimonial-track');
+  if (track) track.style.transform = `translateX(-${carouselIndex * 100}%)`;
+  document.querySelectorAll('.carousel-dot').forEach((d, i) => d.classList.toggle('active', i === carouselIndex));
+}
+
+function startCarouselInterval() {
+  carouselInterval = setInterval(() => moveCarousel(1), 4000);
+}
+
+function resetCarouselInterval() {
+  clearInterval(carouselInterval);
+  startCarouselInterval();
+}
+
+// Carousel touch
+let carTouchStartX = 0;
+document.getElementById('testimonial-carousel')?.addEventListener('touchstart', e => { carTouchStartX = e.touches[0].clientX; clearInterval(carouselInterval); }, {passive:true});
+document.getElementById('testimonial-carousel')?.addEventListener('touchend', e => {
+  const delta = carTouchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(delta) > 60) moveCarousel(delta > 0 ? 1 : -1);
+  startCarouselInterval();
+});
+document.getElementById('testimonial-carousel')?.addEventListener('mouseenter', () => clearInterval(carouselInterval));
+document.getElementById('testimonial-carousel')?.addEventListener('mouseleave', startCarouselInterval);
+
+// ==================== SCROLL EFFECTS ====================
+function initScrollEffects() {
+  const header = document.getElementById('header');
+  const progress = document.getElementById('scroll-progress');
+  const backTop = document.getElementById('back-to-top');
+  const zellige = document.getElementById('hero-zellige');
+  
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    if (progress) progress.style.width = `${(scrollY / maxScroll) * 100}%`;
+    if (header) header.classList.toggle('scrolled', scrollY > 80);
+    if (backTop) backTop.classList.toggle('visible', scrollY > 400);
+    if (zellige) zellige.style.transform = `translateY(${scrollY * 0.3}px)`;
+    
+    // Nav active link
+    const sections = ['hero','menu','about','gallery','testimonials','info-band'];
+    let current = 'hero';
+    sections.forEach(s => { const el = document.getElementById(s); if (el && el.getBoundingClientRect().top < 100) current = s; });
+    document.querySelectorAll('.nav-link').forEach(a => {
+      const href = a.getAttribute('href')?.replace('#','') || '';
+      a.classList.toggle('active', href === current || (href === 'info-band' && current === 'info-band'));
+    });
+  }, {passive:true});
+}
+
+// ==================== COUNTERS ====================
+function initCounters() {
+  const stats = document.querySelectorAll('[data-count]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseFloat(el.getAttribute('data-count'));
+      const decimal = parseInt(el.getAttribute('data-decimal') || 0);
+      const duration = 1500;
+      const start = performance.now();
+      function tick(now) {
+        const t = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = decimal > 0 ? (eased * target).toFixed(decimal) : Math.round(eased * target).toString();
+        if (t < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      observer.unobserve(el);
+    });
+  }, {threshold:0.5});
+  stats.forEach(s => observer.observe(s));
+}
+
+// ==================== MOBILE MENU ====================
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const burger = document.getElementById('hamburger');
+  const isOpen = menu.classList.toggle('open');
+  burger.classList.toggle('open', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+}
+
+function closeMobileMenu() {
+  document.getElementById('mobile-menu')?.classList.remove('open');
+  document.getElementById('hamburger')?.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ==================== LOADER ====================
+function initLoader() {
+  const nameEl = document.getElementById('loader-name');
+  const text = 'Snack El Idrissi';
+  text.split('').forEach((ch, i) => {
+    const span = document.createElement('span');
+    span.textContent = ch === ' ' ? '\u00a0' : ch;
+    span.style.animationDelay = `${0.8 + i * 0.06}s`;
+    nameEl.appendChild(span);
+  });
+  setTimeout(() => {
+    const loader = document.getElementById('loader');
+    if (loader) {
+      loader.style.transition = 'opacity 0.4s';
+      loader.style.opacity = '0';
+      loader.style.pointerEvents = 'none';
+      setTimeout(() => { loader.style.display = 'none'; }, 400);
+    }
+  }, 2800);
+}
+
+// ==================== KEYBOARD ====================
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closeLightbox();
+    closeCart();
+    closeMobileMenu();
+  }
+  if (document.getElementById('lightbox')?.classList.contains('open')) {
+    if (e.key === 'ArrowLeft') lightboxNav(-1);
+    if (e.key === 'ArrowRight') lightboxNav(1);
+  }
+});
+
+// ==================== COOKIE ====================
+function acceptCookie() {
+  try { localStorage.setItem('cookieAccepted', '1'); } catch(e) {}
+  hideCookieBanner();
+}
+
+function declineCookie() { hideCookieBanner(); }
+
+function hideCookieBanner() {
+  const banner = document.getElementById('cookie-banner');
+  if (banner) { banner.classList.add('hidden'); setTimeout(() => banner.remove(), 400); }
+}
+
+// ==================== INIT ====================
+function initApp() {
+  setLanguage(currentLang);
+  initLoader();
+  renderMenu();
+  renderGallery();
+  renderTestimonials();
+  updateCartUI();
+  initScrollEffects();
+  initCounters();
+  startCarouselInterval();
+  typewriterTick();
+
+  // Cookie check
+  try {
+    if (localStorage.getItem('cookieAccepted')) {
+      document.getElementById('cookie-banner')?.remove();
+    }
+  } catch(e) {}
+}
+
+document.addEventListener('DOMContentLoaded', initApp);
+</script>
+<div id="products"></div>
+
+<script>
+fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vSaC1fxty4-mGS92-YKuA0uCmv1RwHiYJ_70hnFIkx3YmRyxqPWihJz_adokIm1U5ls984k0-t_vNSI/pub?output=csv?t=" + new Date().getTime())
+  .then(response => response.text())
+  .then(data => {
+    const rows = data.split("\n").slice(1);
+    let html = "";
+
+    rows.forEach(row => {
+      const cols = row.split(",");
+
+      html += `
+        <div>
+          <img src="${cols[2]}" width="150">
+          <h3>${cols[0]}</h3>
+          <p>${cols[1]} MAD</p>
+        </div>
+      `;
+    });
+
+    document.getElementById("products").innerHTML = html;
+  });
+</script>
+
+</body>
+</html>
